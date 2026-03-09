@@ -32,10 +32,9 @@ const featuredProjects = [
 ];
 
 const highlights = [
-  { label: "Projects Built", value: "10+" },
   { label: "Tech Stack", value: "Full-Stack" },
   { label: "Focus", value: "AI + Product" },
-  { label: "Based In", value: "Canada" },
+  { label: "Based In", value: "Toronto Canada" },
 ];
 
 const skills = [
@@ -44,13 +43,15 @@ const skills = [
   "TypeScript",
   "Node.js",
   "Python",
+  "Java",
   "C++",
+  "PostgreSQL",
   "Supabase",
   "Tailwind CSS",
   "AWS",
   "UI/UX",
   "Machine Learning",
-  "GitHub",
+  "Git / GitHub",
 ];
 
 const fadeUp = {
@@ -100,10 +101,8 @@ export default function HomePage() {
             </nav>
 
             <Link
-              href="#contact"
-              className="rounded-full border border-white/15 bg-white px-4 py-2 text-sm font-semibold text-slate-900 transition hover:scale-[1.03]"
+              href=""
             >
-              Let&apos;s Talk
             </Link>
           </div>
         </motion.header>
@@ -121,7 +120,7 @@ export default function HomePage() {
                   transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
                   className="h-2 w-2 rounded-full bg-cyan-300"
                 />
-                AI • Full-Stack • Product-Focused Developer
+                Full-stack development, AI, and modern web applications
               </motion.div>
 
               <motion.h1
@@ -129,11 +128,11 @@ export default function HomePage() {
                 transition={{ duration: 0.75, ease: "easeOut" }}
                 className="max-w-4xl text-5xl font-black leading-[0.95] tracking-tight sm:text-6xl lg:text-8xl"
               >
-                I build
+                Ray Kang
                 <span className="block bg-gradient-to-r from-cyan-300 via-blue-400 to-fuchsia-400 bg-clip-text text-transparent">
-                  polished digital experiences
+                  ---------------
                 </span>
-                that people remember.
+                Software Engineer
               </motion.h1>
 
               <motion.p
@@ -141,9 +140,7 @@ export default function HomePage() {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 className="mt-6 max-w-2xl text-base leading-8 text-white/70 sm:text-lg"
               >
-                I’m Ray, an AI and full-stack developer building polished web
-                products, interactive digital experiences, and scalable
-                software with strong design sensibility.
+                I’m Ray, a Software Engineer building full-stack applications, AI tools, and modern web products.
               </motion.p>
 
               <motion.div
@@ -222,23 +219,26 @@ export default function HomePage() {
                         Current Focus
                       </p>
                       <h2 className="mt-3 text-2xl font-bold">
-                        AI-driven products with strong UI
+                      Full-stack engineering and AI-driven applications
                       </h2>
                       <p className="mt-3 text-sm leading-7 text-white/65">
-                        Building products that feel modern, fast, intelligent,
-                        and production-ready — from frontend polish to backend
-                        architecture.
+                      Building scalable software from modern web frontends to backend
+                      architecture, APIs, and data systems.
                       </p>
                     </motion.div>
 
                     <div className="grid gap-4 sm:grid-cols-2">
                       <GlassCard
                         title="Frontend"
-                        text="Modern interfaces, refined interactions, and polished layouts that feel premium."
+                        text="Modern web interfaces built with React, Next.js,
+                        and TypeScript, focused on performance,
+                        usability, and scalable architecture."
                       />
                       <GlassCard
                         title="Backend"
-                        text="Scalable app architecture, APIs, databases, auth, and deployment-ready systems."
+                        text="APIs, databases, authentication, and
+                        cloud-ready systems built with Node.js,
+                        PostgreSQL, and modern backend frameworks."
                       />
                     </div>
 
@@ -293,7 +293,7 @@ export default function HomePage() {
                     About Me
                   </p>
                   <h2 className="mt-2 text-2xl font-bold sm:text-3xl">
-                    AI, full-stack, and product-focused developer.
+                  Software Engineer — AI & Full-Stack Systems
                   </h2>
                 </div>
               </div>
@@ -304,20 +304,39 @@ export default function HomePage() {
                 Who I Am
               </p>
               <h2 className="mt-4 text-3xl font-bold text-white sm:text-4xl">
-                Building with both technical depth and creative instinct.
+              Engineering scalable software and modern web applications.
               </h2>
               <p className="mt-6 leading-8">
-                I build software that is not only functional, but polished,
-                memorable, and ready for real users. My work spans full-stack
-                applications, AI-driven projects, interactive platforms, and
-                product experiences where engineering quality and visual
-                execution matter equally.
+              I build software that is reliable, scalable, and designed for real users. 
+              My work focuses on full-stack web applications, backend systems, and AI-driven tools built with modern technologies.
               </p>
               <p className="mt-5 leading-8">
-                I focus on combining modern frontend polish, thoughtful backend
-                architecture, and practical AI-powered ideas to create products
-                that feel high quality from every angle.
+              I enjoy building complete systems from frontend interfaces to backend architecture, APIs, and data infrastructure. 
+              My projects emphasize clean architecture, practical problem solving, and production ready engineering.
               </p>
+              <div className="mt-10">
+              <p className="text-sm uppercase tracking-[0.25em] text-cyan-200/80">
+              Core Areas
+              </p>
+
+              <div className="mt-5 flex flex-wrap gap-3">
+               {[
+                "Full-Stack Systems",
+                "API & Backend Design",
+                "Cloud Deployment",
+                "Machine Learning",
+                "Database Systems",
+                "System Architecture",
+              ].map((item) => (
+               <span
+                  key={item}
+                  className="rounded-full border border-white/10 bg-black/20 px-4 py-2 text-sm text-white/80"
+                >
+                 {item}
+               </span>
+               ))}
+              </div>
+            </div>
             </div>
           </div>
         </motion.section>
@@ -440,17 +459,14 @@ export default function HomePage() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
-          className="py-10 lg:py-16"
+          className="scroll-mt-28 py-10 lg:py-16"
         >
           <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
             <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-[0_10px_40px_rgba(0,0,0,0.2)] backdrop-blur-xl">
               <p className="text-sm uppercase tracking-[0.25em] text-cyan-200/80">
                 Contact
               </p>
-              <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Contact Me</h2>
-              <p className="mt-4 max-w-xl leading-8 text-white/70">
-                Open to software, product, and AI-focused opportunities.
-              </p>
+              <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Lets Connect!</h2>
             </div>
 
             <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-[0_10px_40px_rgba(0,0,0,0.2)] backdrop-blur-xl">
@@ -501,10 +517,24 @@ function ContactRow({
   value: string;
   href?: string;
 }) {
+  const isExternal = href?.startsWith("http");
+  const isEmail = label === "Email";
+
   const content = (
     <div className="rounded-2xl border border-white/10 bg-black/20 p-4 transition duration-150 hover:-translate-y-0.5 hover:bg-black/30 hover:shadow-[0_12px_32px_rgba(0,0,0,0.24)]">
-      <p className="text-xs uppercase tracking-[0.2em] text-white/45">{label}</p>
-      <p className="mt-2 text-base text-white">{value}</p>
+      <p className="text-xs uppercase tracking-[0.2em] text-white/45">
+        {label}
+      </p>
+
+      {isEmail ? (
+        <p className="mt-2 text-base text-white">{value}</p>
+      ) : (
+        <div className="mt-3">
+          <span className="rounded-lg border border-white/10 bg-black/40 px-3 py-1 text-sm text-white hover:bg-black/60 transition">
+            View {label}
+          </span>
+        </div>
+      )}
     </div>
   );
 
@@ -512,8 +542,8 @@ function ContactRow({
     return (
       <a
         href={href}
-        target={href.startsWith("http") ? "_blank" : undefined}
-        rel={href.startsWith("http") ? "noreferrer" : undefined}
+        target={isExternal ? "_blank" : undefined}
+        rel={isExternal ? "noreferrer" : undefined}
       >
         {content}
       </a>
