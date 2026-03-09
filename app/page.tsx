@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
@@ -273,20 +274,38 @@ export default function HomePage() {
           transition={{ duration: 0.7, ease: "easeOut" }}
           className="py-10 lg:py-16"
         >
-          <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
-            <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 backdrop-blur-xl shadow-[0_10px_40px_rgba(0,0,0,0.2)]">
-              <p className="text-sm uppercase tracking-[0.25em] text-cyan-200/80">About Me</p>
-              <h2 className="mt-4 text-3xl font-bold sm:text-4xl">
-                Building with both technical depth and creative instinct.
-              </h2>
+          <div className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr]">
+            <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-3 backdrop-blur-xl shadow-[0_10px_40px_rgba(0,0,0,0.2)]">
+              <div className="relative aspect-[4/5] overflow-hidden rounded-[1.4rem] border border-white/10 bg-black/20">
+                <Image
+                  src="/me.JPG"
+                  alt="Photo of Ray Kang"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#050816]/70 via-transparent to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-5">
+                  <p className="text-xs uppercase tracking-[0.25em] text-cyan-200/80">About Me</p>
+                  <h2 className="mt-2 text-2xl font-bold sm:text-3xl">Developer, builder, and creative problem solver.</h2>
+                </div>
+              </div>
             </div>
 
             <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 text-white/70 backdrop-blur-xl shadow-[0_10px_40px_rgba(0,0,0,0.2)]">
-              <p className="leading-8">
+              <p className="text-sm uppercase tracking-[0.25em] text-cyan-200/80">Who I Am</p>
+              <h2 className="mt-4 text-3xl font-bold text-white sm:text-4xl">
+                Building with both technical depth and creative instinct.
+              </h2>
+              <p className="mt-6 leading-8">
                 I’m a software engineering student who enjoys building experiences that go
                 beyond just working — I want them to feel sharp, intentional, and memorable.
                 My work spans full-stack web apps, machine learning projects, interactive
-                tools, and club/event experiences where design matters just as much as code.
+                tools, and club and event experiences where design matters just as much as code.
+              </p>
+              <p className="mt-5 leading-8">
+                I like combining clean engineering, modern UI, and ambitious ideas to create
+                work that feels polished both technically and visually.
               </p>
             </div>
           </div>
@@ -319,7 +338,7 @@ export default function HomePage() {
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.55, delay: index * 0.12, ease: "easeOut" }}
                 whileHover={{ y: -8, scale: 1.01 }}
-                className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-6 transition duration-300 hover:border-white/20 hover:shadow-[0_30px_80px_rgba(0,0,0,0.28)]"
+                className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-6 transition duration-150 hover:border-white/20 hover:shadow-[0_30px_80px_rgba(0,0,0,0.28)]"
               >
                 <div className={`absolute inset-0 bg-gradient-to-br ${project.accent} opacity-80`} />
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.14),transparent_32%)]" />
@@ -405,9 +424,9 @@ export default function HomePage() {
 
             <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 backdrop-blur-xl shadow-[0_10px_40px_rgba(0,0,0,0.2)]">
               <div className="space-y-5 text-sm text-white/75">
-                <ContactRow label="Email" value="raykang2004@gmail.com" />
-                <ContactRow label="GitHub" value="github.com/RayKang8" />
-                <ContactRow label="LinkedIn" value="linkedin.com/in/ray-kang-aa8b38214" />
+                <ContactRow label="Email" value="raykang2004@gmail.com" href="mailto:raykang2004@gmail.com" />
+                <ContactRow label="GitHub" value="github.com/RayKang8" href="https://github.com/RayKang8" />
+                <ContactRow label="LinkedIn" value="linkedin.com/in/ray-kang-aa8b38214" href="https://www.linkedin.com/in/ray-kang-aa8b38214/" />
               </div>
             </div>
           </div>
@@ -430,13 +449,31 @@ function GlassCard({ title, text }: { title: string; text: string }) {
   );
 }
 
-function ContactRow({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="rounded-2xl border border-white/10 bg-black/20 p-4 transition hover:bg-black/30">
+function ContactRow({
+  label,
+  value,
+  href,
+}: {
+  label: string;
+  value: string;
+  href?: string;
+}) {
+  const content = (
+    <div className="rounded-2xl border border-white/10 bg-black/20 p-4 transition duration-150 hover:-translate-y-0.5 hover:bg-black/30 hover:shadow-[0_12px_32px_rgba(0,0,0,0.24)]">
       <p className="text-xs uppercase tracking-[0.2em] text-white/45">{label}</p>
       <p className="mt-2 text-base text-white">{value}</p>
     </div>
   );
+
+  if (href) {
+    return (
+      <a href={href} target={href.startsWith("http") ? "_blank" : undefined} rel={href.startsWith("http") ? "noreferrer" : undefined}>
+        {content}
+      </a>
+    );
+  }
+
+  return content;
 }
 
 function BackgroundEffects() {
