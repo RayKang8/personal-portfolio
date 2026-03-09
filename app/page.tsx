@@ -1,65 +1,346 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import Link from "next/link";
+
+const featuredProjects = [
+  {
+    title: "Nimbus Labs",
+    description:
+      "AR/VR model management platform with immersive viewing workflows, modern frontend architecture, and AI-assisted interactions.",
+    stack: ["Next.js", "TypeScript", "Supabase", "Prisma"],
+    accent: "from-cyan-400/20 to-blue-500/20",
+  },
+  {
+    title: "Family Feud Web App",
+    description:
+      "Interactive game platform with custom boards, real-time gameplay feel, and a playful experience designed for live events.",
+    stack: ["Next.js", "React", "Supabase", "Tailwind"],
+    accent: "from-orange-400/20 to-red-500/20",
+  },
+  {
+    title: "Spotify Recommender",
+    description:
+      "Machine learning project focused on playlist discovery using similarity-based recommendations and data-driven personalization.",
+    stack: ["Python", "KNN", "Pandas", "Scikit-learn"],
+    accent: "from-emerald-400/20 to-lime-500/20",
+  },
+];
+
+const highlights = [
+  { label: "Projects Built", value: "10+" },
+  { label: "Tech Stack", value: "Full-Stack" },
+  { label: "Focus", value: "UI + Systems" },
+  { label: "Based In", value: "Canada" },
+];
+
+const skills = [
+  "Next.js",
+  "React",
+  "TypeScript",
+  "Node.js",
+  "Python",
+  "C++",
+  "Supabase",
+  "Tailwind CSS",
+  "AWS",
+  "UI/UX",
+  "Machine Learning",
+  "GitHub",
+];
+
+export default function HomePage() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <main className="relative min-h-screen overflow-hidden bg-[#050816] text-white">
+      <BackgroundEffects />
+
+      <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl flex-col px-6 pb-16 pt-6 sm:px-10 lg:px-12">
+        <header className="sticky top-4 z-30">
+          <div className="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-white/10 bg-white/5 px-5 py-3 backdrop-blur-xl">
+            <div>
+              <p className="text-sm font-semibold tracking-[0.25em] text-white/80 uppercase">
+                Ray Kang
+              </p>
+            </div>
+
+            <nav className="hidden items-center gap-7 text-sm text-white/70 md:flex">
+              <a href="#about" className="transition hover:text-white">
+                About
+              </a>
+              <a href="#projects" className="transition hover:text-white">
+                Projects
+              </a>
+              <a href="#resume" className="transition hover:text-white">
+                Resume
+              </a>
+              <a href="#contact" className="transition hover:text-white">
+                Contact
+              </a>
+            </nav>
+
+            <Link
+              href="#contact"
+              className="rounded-full border border-white/15 bg-white px-4 py-2 text-sm font-semibold text-slate-900 transition hover:scale-[1.03]"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+              Let’s Talk
+            </Link>
+          </div>
+        </header>
+
+        <section className="relative flex flex-1 items-center py-16 lg:py-24">
+          <div className="grid w-full items-center gap-14 lg:grid-cols-[1.15fr_0.85fr]">
+            <div>
+              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-sm text-cyan-200 backdrop-blur-md">
+                <span className="h-2 w-2 rounded-full bg-cyan-300" />
+                Software Engineering Student • Builder • Creative Developer
+              </div>
+
+              <h1 className="max-w-4xl text-5xl font-black leading-[0.95] tracking-tight sm:text-6xl lg:text-8xl">
+                I build
+                <span className="block bg-gradient-to-r from-cyan-300 via-blue-400 to-fuchsia-400 bg-clip-text text-transparent">
+                  polished digital experiences
+                </span>
+                that people remember.
+              </h1>
+
+              <p className="mt-6 max-w-2xl text-base leading-8 text-white/70 sm:text-lg">
+                I’m Ray, a software engineering student creating full-stack apps,
+                interactive web experiences, and technical projects that blend clean
+                engineering with standout design.
+              </p>
+
+              <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+                <a
+                  href="#projects"
+                  className="group inline-flex items-center justify-center rounded-2xl bg-white px-6 py-4 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5"
+                >
+                  View My Work
+                  <span className="ml-2 transition group-hover:translate-x-1">→</span>
+                </a>
+                <a
+                  href="#resume"
+                  className="inline-flex items-center justify-center rounded-2xl border border-white/15 bg-white/5 px-6 py-4 text-sm font-semibold text-white backdrop-blur-md transition hover:bg-white/10"
+                >
+                  See Resume
+                </a>
+              </div>
+
+              <div className="mt-10 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+                {highlights.map((item) => (
+                  <div
+                    key={item.label}
+                    className="rounded-3xl border border-white/10 bg-white/5 p-5 backdrop-blur-xl"
+                  >
+                    <p className="text-2xl font-bold">{item.value}</p>
+                    <p className="mt-1 text-sm text-white/60">{item.label}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-cyan-400/20 via-blue-500/10 to-fuchsia-500/20 blur-3xl" />
+
+              <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-5 shadow-2xl backdrop-blur-2xl">
+                <div className="mb-4 flex items-center justify-between">
+                  <div className="flex gap-2">
+                    <span className="h-3 w-3 rounded-full bg-red-400/80" />
+                    <span className="h-3 w-3 rounded-full bg-yellow-400/80" />
+                    <span className="h-3 w-3 rounded-full bg-emerald-400/80" />
+                  </div>
+                  <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/60">
+                    portfolio.tsx
+                  </span>
+                </div>
+
+                <div className="grid gap-4">
+                  <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-white/10 to-white/5 p-5">
+                    <p className="text-xs uppercase tracking-[0.28em] text-cyan-200/80">
+                      Current Focus
+                    </p>
+                    <h2 className="mt-3 text-2xl font-bold">Full-stack products with strong UI</h2>
+                    <p className="mt-3 text-sm leading-7 text-white/65">
+                      Building projects that feel modern, fast, and thoughtfully designed —
+                      from frontend polish to backend structure.
+                    </p>
+                  </div>
+
+                  <div className="grid gap-4 sm:grid-cols-2">
+                    <GlassCard
+                      title="Frontend"
+                      text="Responsive interfaces, animations, and polished layouts that feel premium."
+                    />
+                    <GlassCard
+                      title="Backend"
+                      text="Scalable app logic, auth, databases, APIs, and cloud deployment workflows."
+                    />
+                  </div>
+
+                  <div className="rounded-3xl border border-white/10 bg-black/20 p-5">
+                    <div className="mb-3 flex items-center justify-between">
+                      <p className="text-sm font-semibold text-white/90">Stack I use</p>
+                      <p className="text-xs text-white/45">Always learning</p>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      {skills.map((skill) => (
+                        <span
+                          key={skill}
+                          className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-white/75"
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" className="py-10 lg:py-16">
+          <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
+            <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
+              <p className="text-sm uppercase tracking-[0.25em] text-cyan-200/80">About Me</p>
+              <h2 className="mt-4 text-3xl font-bold sm:text-4xl">
+                Building with both technical depth and creative instinct.
+              </h2>
+            </div>
+
+            <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 text-white/70 backdrop-blur-xl">
+              <p className="leading-8">
+                I’m a software engineering student who enjoys building experiences that go
+                beyond just working — I want them to feel sharp, intentional, and memorable.
+                My work spans full-stack web apps, machine learning projects, interactive
+                tools, and club/event experiences where design matters just as much as code.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" className="py-10 lg:py-16">
+          <div className="mb-8 flex items-end justify-between gap-4">
+            <div>
+              <p className="text-sm uppercase tracking-[0.25em] text-cyan-200/80">Featured Projects</p>
+              <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Selected work</h2>
+            </div>
+            <a href="#contact" className="text-sm text-white/60 transition hover:text-white">
+              Let’s build something →
+            </a>
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-3">
+            {featuredProjects.map((project) => (
+              <article
+                key={project.title}
+                className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-6 transition duration-300 hover:-translate-y-1 hover:border-white/20"
+              >
+                <div className={`absolute inset-0 bg-gradient-to-br ${project.accent} opacity-80`} />
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.14),transparent_32%)]" />
+                <div className="relative z-10">
+                  <div className="mb-10 flex items-center justify-between text-xs uppercase tracking-[0.24em] text-white/55">
+                    <span>Case Study</span>
+                    <span className="rounded-full border border-white/10 px-3 py-1">Featured</span>
+                  </div>
+                  <h3 className="text-2xl font-bold">{project.title}</h3>
+                  <p className="mt-4 text-sm leading-7 text-white/70">{project.description}</p>
+                  <div className="mt-6 flex flex-wrap gap-2">
+                    {project.stack.map((item) => (
+                      <span
+                        key={item}
+                        className="rounded-full border border-white/10 bg-black/20 px-3 py-1.5 text-xs text-white/80"
+                      >
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section id="resume" className="py-10 lg:py-16">
+          <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br from-cyan-400/10 via-white/5 to-fuchsia-400/10 p-8 backdrop-blur-xl lg:p-10">
+            <div className="grid items-center gap-8 lg:grid-cols-[1fr_auto]">
+              <div>
+                <p className="text-sm uppercase tracking-[0.25em] text-cyan-200/80">Resume</p>
+                <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Want the full picture?</h2>
+                <p className="mt-4 max-w-2xl text-white/70 leading-8">
+                  Explore my experience, technical projects, leadership roles, and the work
+                  I’ve done across software, design, and student initiatives.
+                </p>
+              </div>
+
+              <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
+                <a
+                  href="/resume.pdf"
+                  className="rounded-2xl bg-white px-6 py-4 text-center text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5"
+                >
+                  View Resume
+                </a>
+                <a
+                  href="/resume.pdf"
+                  download
+                  className="rounded-2xl border border-white/15 bg-white/5 px-6 py-4 text-center text-sm font-semibold text-white transition hover:bg-white/10"
+                >
+                  Download PDF
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" className="py-10 lg:py-16">
+          <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+            <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
+              <p className="text-sm uppercase tracking-[0.25em] text-cyan-200/80">Contact</p>
+              <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Let’s connect.</h2>
+              <p className="mt-4 max-w-xl text-white/70 leading-8">
+                Whether it’s for internships, collaborations, freelance work, or just a cool
+                conversation about building things, I’d love to hear from you.
+              </p>
+            </div>
+
+            <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
+              <div className="space-y-5 text-sm text-white/75">
+                <ContactRow label="Email" value="raykang2004@gmail.com" />
+                <ContactRow label="GitHub" value="github.com/RayKang8" />
+                <ContactRow label="LinkedIn" value="linkedin.com/in/your-link" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  );
+}
+
+function GlassCard({ title, text }: { title: string; text: string }) {
+  return (
+    <div className="rounded-3xl border border-white/10 bg-white/5 p-5 backdrop-blur-xl">
+      <p className="text-lg font-semibold">{title}</p>
+      <p className="mt-2 text-sm leading-7 text-white/65">{text}</p>
     </div>
+  );
+}
+
+function ContactRow({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="rounded-2xl border border-white/10 bg-black/20 p-4">
+      <p className="text-xs uppercase tracking-[0.2em] text-white/45">{label}</p>
+      <p className="mt-2 text-base text-white">{value}</p>
+    </div>
+  );
+}
+
+function BackgroundEffects() {
+  return (
+    <>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(34,211,238,0.14),transparent_28%),radial-gradient(circle_at_80%_20%,rgba(168,85,247,0.12),transparent_24%),radial-gradient(circle_at_50%_100%,rgba(59,130,246,0.12),transparent_24%)]" />
+      <div className="absolute -left-20 top-24 h-72 w-72 rounded-full bg-cyan-500/20 blur-3xl" />
+      <div className="absolute right-0 top-1/3 h-80 w-80 rounded-full bg-fuchsia-500/15 blur-3xl" />
+      <div className="absolute bottom-0 left-1/3 h-96 w-96 rounded-full bg-blue-600/10 blur-3xl" />
+      <div className="pointer-events-none absolute inset-0 opacity-[0.08] [background-image:linear-gradient(rgba(255,255,255,0.7)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.7)_1px,transparent_1px)] [background-size:80px_80px]" />
+    </>
   );
 }
