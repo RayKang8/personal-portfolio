@@ -124,9 +124,9 @@ export default function FeudProjectPage() {
             <p className="mt-5 leading-8 text-white/70">
               Family Feud Labs is a web-based game builder and player that lets
               users create custom Family Feud style question boards and run them
-              in a live game format. It was originally built for the KCF
-              end-of-year banquet as an interactive group activity, but it can
-              also be used for clubs, events, teams, or anyone who wants to host
+              in a live game format. It was originally built for the KCF (Korean Christian Fellowship)
+              end of year banquet as an interactive group activity, but it can
+              also be used for other clubs, events, teams, or anyone who wants to host
               their own custom game.
             </p>
 
@@ -173,10 +173,10 @@ export default function FeudProjectPage() {
           <h2 className="mt-4 text-3xl font-bold">Built for a real event use case</h2>
 
           <p className="mt-5 max-w-4xl leading-8 text-white/70">
-            I built this project for the KCF end-of-year banquet where we wanted
-            to host a Family Feud style game for a large group. Instead of
+            I built this project for the KCF end of year banquet where we wanted
+            to host a Family Feud style theme/game for the event. Instead of
             manually preparing slides or revealing answers one by one, this app
-            allowed organizers to build the board quickly, control answer reveals
+            allows organizers to build the board quickly, control answer reveals
             live during the event, and reuse games later. It also gave me the
             chance to build and deploy a real full-stack application using modern tools.
           </p>
