@@ -358,7 +358,7 @@ export default function HomePage() {
             </div>
 
             <a href="#contact" className="text-sm text-white/60 transition hover:text-white">
-              Let&apos;s build something →
+
             </a>
           </div>
 
