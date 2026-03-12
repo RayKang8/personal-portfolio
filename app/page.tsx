@@ -417,12 +417,17 @@ export default function HomePage() {
           className="py-10 lg:py-16"
         >
           <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br from-cyan-400/10 via-white/5 to-fuchsia-400/10 p-8 shadow-[0_16px_50px_rgba(0,0,0,0.22)] backdrop-blur-xl lg:p-10">
+
             <div className="grid items-center gap-8 lg:grid-cols-[1fr_auto]">
               <div>
                 <p className="text-sm uppercase tracking-[0.25em] text-cyan-200/80">
                   Resume
                 </p>
-                <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Resume</h2>
+
+                <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
+                  Resume
+                </h2>
+
                 <p className="mt-4 max-w-2xl leading-8 text-white/70">
                   Experience, projects, and technical background.
                 </p>
@@ -431,10 +436,13 @@ export default function HomePage() {
               <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
                 <a
                   href="/resume.pdf"
+                  target="_blank"
+                  rel="noreferrer"
                   className="rounded-2xl bg-white px-6 py-4 text-center text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:shadow-[0_18px_45px_rgba(255,255,255,0.18)]"
                 >
                   View Resume
                 </a>
+
                 <a
                   href="/resume.pdf"
                   download
@@ -444,6 +452,16 @@ export default function HomePage() {
                 </a>
               </div>
             </div>
+
+            {/* Resume Preview */}
+            <div className="mt-10 overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-4 backdrop-blur-xl">
+              <iframe
+                src="/resume.pdf"
+                title="Resume"
+                className="h-[900px] w-full rounded-[1rem] bg-white"
+              />
+            </div>
+
           </div>
         </motion.section>
 
