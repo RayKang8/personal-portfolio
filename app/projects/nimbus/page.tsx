@@ -2,29 +2,30 @@ import Image from "next/image";
 import Link from "next/link";
 
 const techStack = [
-  "Next.js",
   "React",
   "TypeScript",
-  "Tailwind CSS",
-  "Node.js",
-  "Supabase",
-  "PostgreSQL",
-  "AI / LLM Integration",
+  "Vite",
+  "Bun",
+  "Hono",
+  "Gemini API",
+  "TanStack AI",
+  "WebXR",
+  "WebGL",
 ];
 
 const highlights = [
-  "Built as a full-stack platform for managing and interacting with 3D/XR assets",
-  "Combines modern frontend workflows, backend systems, and AI-assisted interactions",
-  "Designed to make complex model management feel cleaner, faster, and more intuitive",
+  "Built a web-based 3D model platform for uploading, decomposing, and interacting with model components",
+  "Integrated a conversational AI interface using Gemini API via TanStack AI for natural-language model interaction",
+  "Implemented immersive XR visualization with WebXR so models can be explored in VR environments",
 ];
 
 const features = [
-  "Upload and manage 3D models through a modern web interface",
-  "View model assets and related project data in a structured dashboard",
-  "Support account-based workflows and authenticated user access",
-  "AI-assisted interaction layer for smarter product experience",
-  "Organized UI for handling models, uploads, and platform activity",
-  "Built as a scalable product-style engineering project rather than a simple demo",
+  "Upload and manage 3D models through a browser-based interface",
+  "Interact with models inside a real-time WebGL viewport",
+  "Decompose models into components for more detailed inspection and manipulation",
+  "Use a conversational AI assistant to query and interact with 3D model components",
+  "Explore supported models in immersive XR / VR environments with WebXR",
+  "Built with a modern full-stack architecture using React, TypeScript, Bun, and Hono",
 ];
 
 export default function NimbusProjectPage() {
@@ -52,7 +53,7 @@ export default function NimbusProjectPage() {
           </div>
         </header>
 
-        <section className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+        <section className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr]">
           <div>
             <p className="text-sm uppercase tracking-[0.28em] text-cyan-200/80">
               Case Study
@@ -63,9 +64,9 @@ export default function NimbusProjectPage() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/70">
-              A full-stack platform for managing 3D and XR assets through a
-              modern web interface, combining scalable product architecture,
-              immersive workflows, and AI-assisted interactions.
+              A web-based 3D model platform built for real-time interaction,
+              AI-assisted querying, and immersive XR visualization. Nimbus Labs
+              combines modern web engineering with graphics and spatial computing workflows.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
@@ -90,12 +91,12 @@ export default function NimbusProjectPage() {
           </div>
 
           <div className="rounded-[2rem] border border-white/10 bg-white/5 p-4 backdrop-blur-xl">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-[1.5rem] border border-white/10 bg-black">
+            <div className="relative aspect-[16/10] overflow-hidden rounded-[1.5rem] border border-white/10 bg-black">
               <Image
                 src="/projects/nimbus/dashboard.png"
                 alt="Nimbus Labs dashboard"
                 fill
-                className="object-contain p-6"
+                className="object-contain p-2"
                 priority
               />
             </div>
@@ -122,18 +123,17 @@ export default function NimbusProjectPage() {
             <h2 className="mt-4 text-3xl font-bold">What it is</h2>
 
             <p className="mt-5 leading-8 text-white/70">
-              Nimbus Labs is a product-style platform designed around managing,
-              organizing, and interacting with 3D model assets in a more modern
-              and structured way. Instead of treating model handling as a clunky
-              utility workflow, the platform aims to make it feel like a polished
-              software product with a clean user experience and scalable backend.
+              Nimbus Labs is a web-based platform for working with 3D models
+              inside an interactive environment. Users can upload models,
+              view them in a live WebGL viewport, decompose them into components,
+              and interact with them through both direct UI workflows and natural-language AI prompts.
             </p>
 
             <p className="mt-5 leading-8 text-white/70">
-              The project reflects the kind of engineering work I enjoy most:
-              full-stack systems, practical product design, and building software
-              that connects frontend usability with stronger backend architecture
-              and intelligent features.
+              What makes the project especially interesting is how it combines
+              frontend engineering, graphics workflows, AI integration, and XR support
+              into one system. Instead of being just a viewer, Nimbus is built as
+              a richer platform for interacting with 3D content on the web.
             </p>
           </div>
 
@@ -158,8 +158,8 @@ export default function NimbusProjectPage() {
                 Role
               </p>
               <p className="mt-4 leading-8 text-white/70">
-                Full-stack development, platform UI implementation, product
-                architecture, and feature work across model workflows and system design.
+                Full-stack engineering across the web platform, 3D interaction workflows,
+                AI integration, and immersive XR functionality.
               </p>
             </div>
           </div>
@@ -170,14 +170,13 @@ export default function NimbusProjectPage() {
             Why It Stands Out
           </p>
 
-          <h2 className="mt-4 text-3xl font-bold">Built like a real software product</h2>
+          <h2 className="mt-4 text-3xl font-bold">Where software engineering meets XR and AI</h2>
 
           <p className="mt-5 max-w-4xl leading-8 text-white/70">
-            Nimbus Labs goes beyond a basic class demo by focusing on product
-            structure, scalable engineering, and a more advanced workflow around
-            XR and 3D assets. It combines modern frontend development, backend
-            systems, data handling, and AI-assisted ideas in a way that feels
-            closer to a real platform than a one-off prototype.
+            Nimbus Labs stands out because it is not just a standard CRUD web app.
+            It works across real-time 3D rendering, conversational AI, and immersive XR.
+            That makes it a much more technically layered project, requiring strong frontend
+            implementation, thoughtful system design, and the ability to connect advanced technologies into one product.
           </p>
         </section>
 
@@ -211,25 +210,31 @@ export default function NimbusProjectPage() {
             <div className="mt-6 space-y-5 text-white/70">
               <div className="rounded-2xl border border-white/10 bg-black/20 p-5">
                 <p className="text-sm leading-7">
-                  Users access the platform through authenticated account-based workflows.
+                  Users upload or select a 3D model inside the platform.
                 </p>
               </div>
 
               <div className="rounded-2xl border border-white/10 bg-black/20 p-5">
                 <p className="text-sm leading-7">
-                  Uploaded models and related project assets are organized through a structured dashboard.
+                  Models are rendered inside a real-time WebGL viewport for direct interaction.
                 </p>
               </div>
 
               <div className="rounded-2xl border border-white/10 bg-black/20 p-5">
                 <p className="text-sm leading-7">
-                  Model details, asset management, and platform actions are surfaced through a modern UI.
+                  Components can be decomposed and manipulated for more detailed workflows.
                 </p>
               </div>
 
               <div className="rounded-2xl border border-white/10 bg-black/20 p-5">
                 <p className="text-sm leading-7">
-                  AI-assisted functionality helps make the product feel more intelligent and interactive.
+                  A conversational AI interface allows users to query and interact with model data using natural language.
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-white/10 bg-black/20 p-5">
+                <p className="text-sm leading-7">
+                  Supported experiences can also extend into immersive VR exploration through WebXR.
                 </p>
               </div>
             </div>
