@@ -30,8 +30,8 @@ const features = [
 
 export default function NimbusProjectPage() {
   return (
-    <main className="min-h-screen bg-[#050816] text-white">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(34,211,238,0.16),transparent_26%),radial-gradient(circle_at_80%_20%,rgba(59,130,246,0.12),transparent_24%),radial-gradient(circle_at_50%_100%,rgba(168,85,247,0.10),transparent_24%)]" />
+    <main className="min-h-screen bg-[#0c0b09] text-white">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(245,245,244,0.10),transparent_26%),radial-gradient(circle_at_80%_20%,rgba(253,230,138,0.08),transparent_24%),radial-gradient(circle_at_50%_100%,rgba(214,211,209,0.08),transparent_24%)]" />
       <div className="pointer-events-none absolute inset-0 opacity-[0.08] [background-image:linear-gradient(rgba(255,255,255,0.7)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.7)_1px,transparent_1px)] [background-size:80px_80px]" />
 
       <div className="relative z-10 mx-auto max-w-6xl px-6 py-8 sm:px-10 lg:px-12">
@@ -55,7 +55,7 @@ export default function NimbusProjectPage() {
 
         <section className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr]">
           <div>
-            <p className="text-sm uppercase tracking-[0.28em] text-cyan-200/80">
+            <p className="text-sm uppercase tracking-[0.28em] text-stone-200/80">
               Case Study
             </p>
 
@@ -116,7 +116,7 @@ export default function NimbusProjectPage() {
 
         <section className="mt-16 grid gap-6 lg:grid-cols-[1fr_0.9fr]">
           <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
-            <p className="text-sm uppercase tracking-[0.25em] text-cyan-200/80">
+            <p className="text-sm uppercase tracking-[0.25em] text-stone-200/80">
               Overview
             </p>
 
@@ -138,7 +138,7 @@ export default function NimbusProjectPage() {
           </div>
 
           <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
-            <p className="text-sm uppercase tracking-[0.25em] text-cyan-200/80">
+            <p className="text-sm uppercase tracking-[0.25em] text-stone-200/80">
               Tech Stack
             </p>
 
@@ -154,7 +154,7 @@ export default function NimbusProjectPage() {
             </div>
 
             <div className="mt-10">
-              <p className="text-sm uppercase tracking-[0.25em] text-cyan-200/80">
+              <p className="text-sm uppercase tracking-[0.25em] text-stone-200/80">
                 Role
               </p>
               <p className="mt-4 leading-8 text-white/70">
@@ -166,7 +166,7 @@ export default function NimbusProjectPage() {
         </section>
 
         <section className="mt-16 rounded-[2rem] border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
-          <p className="text-sm uppercase tracking-[0.25em] text-cyan-200/80">
+          <p className="text-sm uppercase tracking-[0.25em] text-stone-200/80">
             Why It Stands Out
           </p>
 
@@ -182,7 +182,7 @@ export default function NimbusProjectPage() {
 
         <section className="mt-16 grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
           <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
-            <p className="text-sm uppercase tracking-[0.25em] text-cyan-200/80">
+            <p className="text-sm uppercase tracking-[0.25em] text-stone-200/80">
               Features
             </p>
 
@@ -201,7 +201,7 @@ export default function NimbusProjectPage() {
           </div>
 
           <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
-            <p className="text-sm uppercase tracking-[0.25em] text-cyan-200/80">
+            <p className="text-sm uppercase tracking-[0.25em] text-stone-200/80">
               Platform Flow
             </p>
 
@@ -243,7 +243,7 @@ export default function NimbusProjectPage() {
 
         <section className="mt-16">
           <div className="mb-8">
-            <p className="text-sm uppercase tracking-[0.25em] text-cyan-200/80">
+            <p className="text-sm uppercase tracking-[0.25em] text-stone-200/80">
               Gallery
             </p>
             <h2 className="mt-4 text-3xl font-bold">Project screenshots</h2>

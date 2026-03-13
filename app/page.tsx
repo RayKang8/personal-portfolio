@@ -11,7 +11,7 @@ const featuredProjects = [
     description:
       "AR/VR model management platform with immersive viewing workflows and AI-assisted interactions.",
     stack: ["Next.js", "TypeScript", "Supabase", "Prisma"],
-    accent: "from-cyan-400/20 to-blue-500/20",
+    accent: "from-stone-200/10 to-amber-200/10",
   },
   {
     title: "Family Feud Web App",
@@ -19,7 +19,7 @@ const featuredProjects = [
     description:
       "Interactive event game platform with custom boards and real-time gameplay experience.",
     stack: ["Next.js", "React", "Supabase", "Tailwind"],
-    accent: "from-orange-400/20 to-red-500/20",
+    accent: "from-amber-200/10 to-orange-200/10",
   },
   {
     title: "Spotify Recommender",
@@ -27,7 +27,7 @@ const featuredProjects = [
     description:
       "Machine learning project for playlist discovery using similarity-based recommendations.",
     stack: ["Python", "KNN", "Pandas", "Scikit-learn"],
-    accent: "from-emerald-400/20 to-lime-500/20",
+    accent: "from-olive-200/10 to-stone-200/10",
   },
 ];
 
@@ -70,7 +70,7 @@ const stagger = {
 
 export default function HomePage() {
   return (
-    <main className="relative min-h-screen overflow-hidden bg-[#050816] text-white selection:bg-cyan-300/30 selection:text-white">
+    <main className="relative min-h-screen overflow-hidden bg-[#0c0b09] text-white selection:bg-amber-100/20 selection:text-white">
       <BackgroundEffects />
 
       <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl flex-col px-6 pb-16 pt-6 sm:px-10 lg:px-12">
@@ -85,7 +85,7 @@ export default function HomePage() {
               Ray Kang
             </p>
 
-            <nav className="hidden items-center gap-7 text-sm text-white/70 md:flex">
+            <nav className="hidden items-center gap-7 text-sm text-amber-100/70 md:flex">
               <a href="#about" className="transition hover:text-white">
                 About
               </a>
@@ -108,12 +108,12 @@ export default function HomePage() {
               <motion.div
                 variants={fadeUp}
                 transition={{ duration: 0.65, ease: "easeOut" }}
-                className="mb-6 inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-sm text-cyan-200 shadow-[0_0_40px_rgba(34,211,238,0.12)] backdrop-blur-md"
+                className="mb-6 inline-flex items-center gap-2 rounded-full border border-amber-100/15 bg-amber-50/5 px-4 py-2 text-sm text-stone-200 shadow-[0_0_40px_rgba(251,191,36,0.05)] backdrop-blur-md"
               >
                 <motion.span
                   animate={{ opacity: [0.45, 1, 0.45] }}
                   transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
-                  className="h-2 w-2 rounded-full bg-cyan-300"
+                  className="h-2 w-2 rounded-full bg-amber-200"
                 />
                 Full-stack development, AI, and modern web applications
               </motion.div>
@@ -124,7 +124,7 @@ export default function HomePage() {
                 className="max-w-4xl text-5xl font-black leading-[0.95] tracking-tight sm:text-6xl lg:text-8xl"
               >
                 Ray Kang
-                <span className="block bg-gradient-to-r from-cyan-300 via-blue-400 to-fuchsia-400 bg-clip-text text-transparent">
+                <span className="block bg-gradient-to-r from-stone-100 via-amber-100 to-stone-300 bg-clip-text text-transparent">
                   ---------------
                 </span>
                 Software Engineer
@@ -133,7 +133,7 @@ export default function HomePage() {
               <motion.p
                 variants={fadeUp}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className="mt-6 max-w-2xl text-base leading-8 text-white/70 sm:text-lg"
+                className="mt-6 max-w-2xl text-base leading-8 text-amber-100/70 sm:text-lg"
               >
                 I’m Ray, a Software Engineer building full-stack applications, AI tools, and modern web products.
               </motion.p>
@@ -189,8 +189,8 @@ export default function HomePage() {
                 transition={{ duration: 6.5, repeat: Infinity, ease: "easeInOut" }}
                 className="relative"
               >
-                <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-cyan-400/20 via-blue-500/10 to-fuchsia-500/20 blur-3xl" />
-                <div className="absolute -inset-6 rounded-[2.5rem] bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.14),transparent_45%)] opacity-70 blur-2xl" />
+                <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-amber-100/10 via-stone-200/5 to-olive-200/10 blur-3xl" />
+                <div className="absolute -inset-6 rounded-[2.5rem] bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.12),transparent_45%)] opacity-70 blur-2xl" />
 
                 <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-5 shadow-[0_30px_100px_rgba(0,0,0,0.35)] backdrop-blur-2xl">
                   <div className="mb-4 flex items-center justify-between">
@@ -210,7 +210,7 @@ export default function HomePage() {
                       whileHover={{ scale: 1.01 }}
                       className="rounded-3xl border border-white/10 bg-gradient-to-br from-white/10 to-white/5 p-5"
                     >
-                      <p className="text-xs uppercase tracking-[0.28em] text-cyan-200/80">
+                      <p className="text-xs uppercase tracking-[0.28em] text-amber-100/70">
                         Current Focus
                       </p>
                       <h2 className="mt-3 text-2xl font-bold">
@@ -282,9 +282,9 @@ export default function HomePage() {
                   className="object-cover"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#050816]/70 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/70 via-transparent to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-5">
-                  <p className="text-xs uppercase tracking-[0.25em] text-cyan-200/80">
+                <p className="text-xs uppercase tracking-[0.25em] text-amber-100/75">
                     About Me
                   </p>
                   <h2 className="mt-2 text-2xl font-bold sm:text-3xl">
@@ -294,8 +294,8 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 text-white/70 shadow-[0_10px_40px_rgba(0,0,0,0.2)] backdrop-blur-xl">
-              <p className="text-sm uppercase tracking-[0.25em] text-cyan-200/80">
+            <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 text-amber-100/70 shadow-[0_10px_40px_rgba(0,0,0,0.2)] backdrop-blur-xl">
+              <p className="text-sm uppercase tracking-[0.25em] text-amber-100/70">
                 Who I Am
               </p>
               <h2 className="mt-4 text-3xl font-bold text-white sm:text-4xl">
@@ -310,7 +310,7 @@ export default function HomePage() {
               My projects emphasize clean architecture, practical problem solving, and production ready engineering.
               </p>
               <div className="mt-10">
-              <p className="text-sm uppercase tracking-[0.25em] text-cyan-200/80">
+              <p className="text-sm uppercase tracking-[0.25em] text-amber-100/70">
               Core Areas
               </p>
 
@@ -346,7 +346,7 @@ export default function HomePage() {
         >
           <div className="mb-8 flex items-end justify-between gap-4">
             <div>
-              <p className="text-sm uppercase tracking-[0.25em] text-cyan-200/80">
+              <p className="text-sm uppercase tracking-[0.25em] text-amber-100/70">
                 Featured Projects
               </p>
               <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Selected work</h2>
@@ -374,7 +374,7 @@ export default function HomePage() {
                   <div
                     className={`absolute inset-0 bg-gradient-to-br ${project.accent} opacity-80`}
                   />
-                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.14),transparent_32%)]" />
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.1),transparent_32%)]" />
                   <div className="absolute -right-10 top-0 h-28 w-28 rounded-full bg-white/10 blur-3xl transition duration-500 group-hover:scale-125" />
 
                   <div className="relative z-10">
@@ -387,7 +387,7 @@ export default function HomePage() {
 
                     <h3 className="text-2xl font-bold">{project.title}</h3>
 
-                    <p className="mt-4 text-sm leading-7 text-white/70">
+                    <p className="mt-4 text-sm leading-7 text-amber-100/70">
                       {project.description}
                     </p>
 
@@ -416,11 +416,11 @@ export default function HomePage() {
           transition={{ duration: 0.7, ease: "easeOut" }}
           className="py-10 lg:py-16"
         >
-          <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br from-cyan-400/10 via-white/5 to-fuchsia-400/10 p-8 shadow-[0_16px_50px_rgba(0,0,0,0.22)] backdrop-blur-xl lg:p-10">
+          <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br from-stone-100/10 via-white/5 to-amber-100/10 p-8 shadow-[0_16px_50px_rgba(0,0,0,0.22)] backdrop-blur-xl lg:p-10">
 
             <div className="grid items-center gap-8 lg:grid-cols-[1fr_auto]">
               <div>
-                <p className="text-sm uppercase tracking-[0.25em] text-cyan-200/80">
+                <p className="text-sm uppercase tracking-[0.25em] text-amber-100/70">
                   Resume
                 </p>
 
@@ -428,7 +428,7 @@ export default function HomePage() {
                   Resume
                 </h2>
 
-                <p className="mt-4 max-w-2xl leading-8 text-white/70">
+                <p className="mt-4 max-w-2xl leading-8 text-amber-100/70">
                   Experience, projects, and technical background.
                 </p>
               </div>
@@ -475,7 +475,7 @@ export default function HomePage() {
         >
           <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
             <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-[0_10px_40px_rgba(0,0,0,0.2)] backdrop-blur-xl">
-              <p className="text-sm uppercase tracking-[0.25em] text-cyan-200/80">
+              <p className="text-sm uppercase tracking-[0.25em] text-amber-100/70">
                 Contact
               </p>
               <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Lets Connect!</h2>
@@ -568,24 +568,24 @@ function ContactRow({
 function BackgroundEffects() {
   return (
     <>
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(34,211,238,0.14),transparent_28%),radial-gradient(circle_at_80%_20%,rgba(168,85,247,0.12),transparent_24%),radial-gradient(circle_at_50%_100%,rgba(59,130,246,0.12),transparent_24%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(245,245,244,0.08),transparent_28%),radial-gradient(circle_at_80%_20%,rgba(253,230,138,0.08),transparent_24%),radial-gradient(circle_at_50%_100%,rgba(190,200,170,0.07),transparent_24%)]" />
       <motion.div
         animate={{ x: [0, 30, 0], y: [0, -20, 0] }}
         transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute -left-20 top-24 h-72 w-72 rounded-full bg-cyan-500/20 blur-3xl"
+        className="absolute -left-20 top-24 h-72 w-72 rounded-full bg-stone-200/10 blur-3xl"
       />
       <motion.div
         animate={{ x: [0, -24, 0], y: [0, 18, 0] }}
         transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute right-0 top-1/3 h-80 w-80 rounded-full bg-fuchsia-500/15 blur-3xl"
+        className="absolute right-0 top-1/3 h-80 w-80 rounded-full bg-amber-200/10 blur-3xl"
       />
       <motion.div
         animate={{ x: [0, 14, 0], y: [0, 24, 0] }}
         transition={{ duration: 11, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute bottom-0 left-1/3 h-96 w-96 rounded-full bg-blue-600/10 blur-3xl"
+        className="absolute bottom-0 left-1/3 h-96 w-96 rounded-full bg-lime-100/10 blur-3xl"
       />
       <div className="pointer-events-none absolute inset-0 opacity-[0.08] [background-image:linear-gradient(rgba(255,255,255,0.7)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.7)_1px,transparent_1px)] [background-size:80px_80px]" />
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_42%,rgba(5,8,22,0.55)_100%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_42%,rgba(12,11,9,0.6)_100%)]" />
     </>
   );
 }

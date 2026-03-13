@@ -10,8 +10,8 @@ const highlights = [
 
 export default function SpotifyProjectPage() {
   return (
-    <main className="min-h-screen bg-[#050816] text-white">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(16,185,129,0.16),transparent_28%),radial-gradient(circle_at_80%_20%,rgba(132,204,22,0.12),transparent_24%),radial-gradient(circle_at_50%_100%,rgba(34,197,94,0.1),transparent_24%)]" />
+    <main className="min-h-screen bg-[#0c0b09] text-white">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(236,253,245,0.10),transparent_28%),radial-gradient(circle_at_80%_20%,rgba(217,249,157,0.08),transparent_24%),radial-gradient(circle_at_50%_100%,rgba(245,245,244,0.08),transparent_24%)]" />
       <div className="pointer-events-none absolute inset-0 opacity-[0.08] [background-image:linear-gradient(rgba(255,255,255,0.7)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.7)_1px,transparent_1px)] [background-size:80px_80px]" />
 
       <div className="relative z-10 mx-auto max-w-6xl px-6 py-8 sm:px-10 lg:px-12">
@@ -32,7 +32,7 @@ export default function SpotifyProjectPage() {
 
         <section className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
-            <p className="text-sm uppercase tracking-[0.28em] text-emerald-200/80">Case Study</p>
+            <p className="text-sm uppercase tracking-[0.28em] text-lime-100/80">Case Study</p>
             <h1 className="mt-4 text-5xl font-black leading-tight sm:text-6xl">
               Spotify Recommender
             </h1>
@@ -54,7 +54,7 @@ export default function SpotifyProjectPage() {
           </div>
 
           <div className="rounded-[2rem] border border-white/10 bg-white/5 p-4 backdrop-blur-xl">
-            <div className="flex aspect-[4/3] items-center justify-center rounded-[1.5rem] border border-white/10 bg-gradient-to-br from-emerald-400/20 via-lime-500/10 to-green-500/10 text-center text-white/50">
+            <div className="flex aspect-[4/3] items-center justify-center rounded-[1.5rem] border border-white/10 bg-gradient-to-br from-lime-100/10 via-stone-100/5 to-emerald-100/10 text-center text-white/50">
               Project Screenshot / Preview
             </div>
           </div>
@@ -73,7 +73,7 @@ export default function SpotifyProjectPage() {
 
         <section className="mt-16 grid gap-6 lg:grid-cols-[1fr_0.9fr]">
           <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
-            <p className="text-sm uppercase tracking-[0.25em] text-emerald-200/80">Overview</p>
+            <p className="text-sm uppercase tracking-[0.25em] text-lime-100/80">Overview</p>
             <h2 className="mt-4 text-3xl font-bold">What it is</h2>
             <p className="mt-5 leading-8 text-white/70">
               This project explores how machine learning can improve music discovery by using
@@ -86,7 +86,7 @@ export default function SpotifyProjectPage() {
           </div>
 
           <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
-            <p className="text-sm uppercase tracking-[0.25em] text-emerald-200/80">Tech Stack</p>
+            <p className="text-sm uppercase tracking-[0.25em] text-lime-100/80">Tech Stack</p>
             <div className="mt-5 flex flex-wrap gap-3">
               {techStack.map((tech) => (
                 <span
@@ -99,7 +99,7 @@ export default function SpotifyProjectPage() {
             </div>
 
             <div className="mt-10">
-              <p className="text-sm uppercase tracking-[0.25em] text-emerald-200/80">Role</p>
+              <p className="text-sm uppercase tracking-[0.25em] text-lime-100/80">Role</p>
               <p className="mt-4 leading-8 text-white/70">
                 Data analysis, recommendation logic, model experimentation, and results-focused implementation.
               </p>
