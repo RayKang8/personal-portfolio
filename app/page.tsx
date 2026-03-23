@@ -11,7 +11,7 @@ const featuredProjects = [
     description:
       "AI-powered investment intelligence platform for stock analysis, portfolio insights, and conversational financial research.",
     stack: ["Next.js", "Node.js", "PostgreSQL", "AI"],
-    accent: "from-emerald-400/20 to-teal-500/20",
+    accent: "from-stone-200/10 to-amber-200/10",
   },
   {
     title: "Nimbus Labs",
@@ -27,7 +27,7 @@ const featuredProjects = [
     description:
       "Interactive event game platform with custom boards and real-time gameplay experience.",
     stack: ["Next.js", "React", "Supabase", "Tailwind"],
-    accent: "from-amber-200/10 to-orange-200/10",
+    accent: "from-stone-200/10 to-amber-200/10",
   },
 ];
 
