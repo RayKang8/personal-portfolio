@@ -412,6 +412,7 @@ export default function HomePage() {
             </Link>
           ))}
         </div>
+        </motion.section>
 
         <motion.section
           id="resume"
