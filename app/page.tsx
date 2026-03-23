@@ -6,6 +6,14 @@ import { motion } from "framer-motion";
 
 const featuredProjects = [
   {
+    title: "MarketMind",
+    slug: "marketmind",
+    description:
+      "AI-powered investment intelligence platform for stock analysis, portfolio insights, and conversational financial research.",
+    stack: ["Next.js", "Node.js", "PostgreSQL", "AI"],
+    accent: "from-emerald-400/20 to-teal-500/20",
+  },
+  {
     title: "Nimbus Labs",
     slug: "nimbus",
     description:
@@ -20,14 +28,6 @@ const featuredProjects = [
       "Interactive event game platform with custom boards and real-time gameplay experience.",
     stack: ["Next.js", "React", "Supabase", "Tailwind"],
     accent: "from-amber-200/10 to-orange-200/10",
-  },
-  {
-    title: "Spotify Recommender",
-    slug: "spotify",
-    description:
-      "Machine learning project for playlist discovery using similarity-based recommendations.",
-    stack: ["Python", "KNN", "Pandas", "Scikit-learn"],
-    accent: "from-olive-200/10 to-stone-200/10",
   },
 ];
 
