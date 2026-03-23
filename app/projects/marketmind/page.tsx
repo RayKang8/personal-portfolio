@@ -238,36 +238,41 @@ export default function MarketMindProjectPage() {
         </section>
 
         <section className="mt-16">
-          <div className="mb-8">
-            <p className="text-sm uppercase tracking-[0.25em] text-stone-200/80">
-              Gallery
-            </p>
-            <h2 className="mt-4 text-3xl font-bold">Project screenshots</h2>
-          </div>
+        <div className="mb-8">
+          <p className="text-sm uppercase tracking-[0.25em] text-stone-200/80">
+            Gallery
+          </p>
+          <h2 className="mt-4 text-3xl font-bold">Project screenshots</h2>
+        </div>
 
-          <div className="grid gap-6 lg:grid-cols-2">
-            <ScreenshotCard
-              src="/projects/marketmind/dashboard.png"
-              alt="MarketMind dashboard"
-              title="Dashboard"
-            />
-            <ScreenshotCard
-              src="/projects/marketmind/chat.png"
-              alt="MarketMind AI chat"
-              title="AI Analysis Interface"
-            />
-            <ScreenshotCard
-              src="/projects/marketmind/watchlist.png"
-              alt="MarketMind watchlist"
-              title="Watchlists"
-            />
-            <ScreenshotCard
-              src="/projects/marketmind/portfolio.png"
-              alt="MarketMind portfolio"
-              title="Portfolio Analytics"
-            />
-          </div>
-        </section>
+        <div className="grid gap-6 lg:grid-cols-2">
+          <ScreenshotCard
+            src="/projects/marketmind/analysis.png"
+            alt="MarketMind dashboard"
+            title="Dashboard"
+          />
+          <ScreenshotCard
+            src="/projects/marketmind/login.png"
+            alt="MarketMind login page"
+            title="Login"
+          />
+          <ScreenshotCard
+            src="/projects/marketmind/watchlist.png"
+            alt="MarketMind watchlist interface"
+            title="Watchlist"
+          />
+          <ScreenshotCard
+            src="/projects/marketmind/nvda.png"
+            alt="MarketMind NVDA stock analysis"
+            title="Stock Analysis"
+          />
+          <ScreenshotCard
+            src="/projects/marketmind/nontech.png"
+            alt="MarketMind non-tech market view"
+            title="Market Insights"
+          />
+        </div>
+      </section>
       </div>
     </main>
   );
