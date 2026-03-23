@@ -94,7 +94,7 @@ export default function MarketMindProjectPage() {
           <div className="rounded-[2rem] border border-white/10 bg-white/5 p-4 backdrop-blur-xl">
             <div className="relative aspect-[16/10] overflow-hidden rounded-[1.5rem] border border-white/10 bg-black">
               <Image
-                src="/projects/marketmind/dashboard.png"
+                src="/projects/marketmind/analysis.png"
                 alt="MarketMind dashboard"
                 fill
                 className="object-contain p-2"
