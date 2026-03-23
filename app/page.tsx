@@ -357,41 +357,46 @@ export default function HomePage() {
           </div>
 
           <div className="grid gap-6 lg:grid-cols-3">
-            {featuredProjects.map((project, index) => (
-              <Link key={project.title} href={`/projects/${project.slug}`}>
-                <motion.article
-                  initial={{ opacity: 0, y: 28 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.2 }}
-                  transition={{
-                    duration: 0.55,
-                    delay: index * 0.12,
-                    ease: "easeOut",
-                  }}
-                  whileHover={{ y: -8, scale: 1.01 }}
-                  className="group relative cursor-pointer overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-6 transition duration-150 hover:border-white/20 hover:shadow-[0_30px_80px_rgba(0,0,0,0.28)]"
-                >
-                  <div
-                    className={`absolute inset-0 bg-gradient-to-br ${project.accent} opacity-80`}
-                  />
-                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.1),transparent_32%)]" />
-                  <div className="absolute -right-10 top-0 h-28 w-28 rounded-full bg-white/10 blur-3xl transition duration-500 group-hover:scale-125" />
+          {featuredProjects.map((project, index) => (
+            <Link
+              key={project.title}
+              href={`/projects/${project.slug}`}
+              className="block h-full"
+            >
+              <motion.article
+                initial={{ opacity: 0, y: 28 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{
+                  duration: 0.55,
+                  delay: index * 0.12,
+                  ease: "easeOut",
+                }}
+                whileHover={{ y: -8, scale: 1.01 }}
+                className="group relative flex h-full min-h-[320px] cursor-pointer flex-col overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-6 transition duration-150 hover:border-white/20 hover:shadow-[0_30px_80px_rgba(0,0,0,0.28)]"
+              >
+                <div
+                  className={`absolute inset-0 bg-gradient-to-br ${project.accent} opacity-50`}
+                />
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.1),transparent_32%)]" />
+                <div className="absolute -right-10 top-0 h-28 w-28 rounded-full bg-white/10 blur-3xl transition duration-500 group-hover:scale-125" />
 
-                  <div className="relative z-10">
-                    <div className="mb-10 flex items-center justify-between text-xs uppercase tracking-[0.24em] text-white/55">
-                      <span>Case Study</span>
-                      <span className="rounded-full border border-white/10 px-3 py-1">
-                        Featured
-                      </span>
-                    </div>
+                <div className="relative z-10 flex h-full flex-col">
+                  <div className="mb-10 flex items-center justify-between text-xs uppercase tracking-[0.24em] text-white/55">
+                    <span>Case Study</span>
+                    <span className="rounded-full border border-white/10 px-3 py-1">
+                      Featured
+                    </span>
+                  </div>
 
-                    <h3 className="text-2xl font-bold">{project.title}</h3>
+                  <h3 className="text-2xl font-bold">{project.title}</h3>
 
-                    <p className="mt-4 text-sm leading-7 text-amber-100/70">
-                      {project.description}
-                    </p>
+                  <p className="mt-4 text-sm leading-7 text-amber-100/70">
+                    {project.description}
+                  </p>
 
-                    <div className="mt-6 flex flex-wrap gap-2">
+                  <div className="mt-auto pt-6">
+                    <div className="flex flex-wrap gap-2">
                       {project.stack.map((item) => (
                         <span
                           key={item}
@@ -402,11 +407,11 @@ export default function HomePage() {
                       ))}
                     </div>
                   </div>
-                </motion.article>
-              </Link>
-            ))}
-          </div>
-        </motion.section>
+                </div>
+              </motion.article>
+            </Link>
+          ))}
+        </div>
 
         <motion.section
           id="resume"
