@@ -14,9 +14,9 @@ const techStack = [
 ];
 
 const highlights = [
+  "Senior software engineering capstone project that placed Top 5 in the university capstone competition",
   "Built a web-based 3D model platform for uploading, decomposing, and interacting with model components",
-  "Integrated a conversational AI interface using Gemini API via TanStack AI for natural-language model interaction",
-  "Implemented immersive XR visualization with WebXR so models can be explored in VR environments",
+  "Integrated conversational AI using Gemini API via TanStack AI for natural-language interaction with models",
 ];
 
 const features = [
@@ -64,9 +64,12 @@ export default function NimbusProjectPage() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/70">
-              A web-based 3D model platform built for real-time interaction,
-              AI-assisted querying, and immersive XR visualization. Nimbus Labs
-              combines modern web engineering with graphics and spatial computing workflows.
+              Nimbus Labs is a senior software engineering capstone project developed
+              over an 8-month team cycle. The platform enables real-time interaction
+              with 3D models through AI-assisted querying and immersive XR
+              visualization, combining modern web engineering with graphics and
+              spatial computing workflows. The project placed Top 5 in the university
+              capstone competition.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
@@ -123,10 +126,11 @@ export default function NimbusProjectPage() {
             <h2 className="mt-4 text-3xl font-bold">What it is</h2>
 
             <p className="mt-5 leading-8 text-white/70">
-              Nimbus Labs is a web-based platform for working with 3D models
-              inside an interactive environment. Users can upload models,
-              view them in a live WebGL viewport, decompose them into components,
-              and interact with them through both direct UI workflows and natural-language AI prompts.
+              Nimbus Labs was developed as a senior software engineering capstone
+              project focused on building a modern web platform for interacting with
+              3D models. Users can upload models, view them in a live WebGL viewport,
+              decompose them into components, and interact with them through both
+              direct UI workflows and natural-language AI prompts.
             </p>
 
             <p className="mt-5 leading-8 text-white/70">
