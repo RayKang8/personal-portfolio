@@ -93,7 +93,7 @@ export default function NimbusProjectPage() {
           <div className="rounded-[2rem] border border-white/10 bg-white/5 p-4 backdrop-blur-xl">
             <div className="relative aspect-[16/10] overflow-hidden rounded-[1.5rem] border border-white/10 bg-black">
               <Image
-                src="/projects/nimbus/dashboard.png"
+                src="/projects/nimbus/group.png"
                 alt="Nimbus Labs dashboard"
                 fill
                 className="object-contain p-2"
