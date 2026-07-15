@@ -8,12 +8,17 @@ const techStack = [
   "JavaScript",
   "E-Commerce",
   "Product Catalog",
+  "SEO",
+  "Email Marketing",
+  "Paid Ads",
+  "Social Media",
 ];
 
 const highlights = [
   "Expanded the Shopify storefront from B2B-only to hybrid B2B/B2C as sole developer",
   "Built dual account flows, custom Liquid pricing logic, and automated Shopify Flow tagging",
   "Owned digital operations and product catalog; redesigned the platform for a new retail channel",
+  "Run paid ads, SEO, email, and social media marketing for the brand",
 ];
 
 const features = [
@@ -95,7 +100,7 @@ export default function KgtProjectPage() {
           </div>
         </section>
 
-        <section className="mt-16 grid gap-6 lg:grid-cols-3">
+        <section className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {highlights.map((item) => (
             <div
               key={item}
@@ -153,6 +158,16 @@ export default function KgtProjectPage() {
               <p className="mt-4 leading-8 text-white/70">
                 Sole developer: Shopify storefront, product catalog, digital
                 operations, and the B2B-to-B2C platform redesign.
+              </p>
+            </div>
+
+            <div className="mt-10">
+              <p className="text-sm uppercase tracking-[0.25em] text-stone-200/80">
+                Marketing
+              </p>
+              <p className="mt-4 leading-8 text-white/70">
+                Also run the brand&apos;s paid ads, SEO, email, and social
+                media marketing.
               </p>
             </div>
           </div>
