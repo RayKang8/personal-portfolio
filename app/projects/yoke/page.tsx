@@ -83,15 +83,18 @@ export default function YokeProjectPage() {
             </div>
           </div>
 
-          <div className="rounded-[2rem] border border-amber-100/20 bg-gradient-to-br from-amber-100/10 to-stone-200/5 p-4 backdrop-blur-xl">
-            <div className="relative aspect-[16/10] overflow-hidden rounded-[1.5rem] border border-white/10 bg-black">
-              <Image
-                src="/projects/yoke/main.png"
-                alt="Yoke app screenshot"
-                fill
-                className="object-contain p-2"
-                priority
-              />
+          <div className="flex items-center justify-center">
+            <div className="relative w-full max-w-[260px]">
+              <div className="absolute inset-0 rounded-[3rem] bg-gradient-to-br from-amber-100/25 to-stone-200/10 blur-2xl" />
+              <div className="relative aspect-[1290/2796] overflow-hidden rounded-[2.5rem] border border-white/10 bg-black shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
+                <Image
+                  src="/projects/yoke/main.png"
+                  alt="Yoke app home screen"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -233,7 +236,58 @@ export default function YokeProjectPage() {
             </div>
           </div>
         </section>
+
+        <section className="mt-16">
+          <div className="mb-8">
+            <p className="text-sm uppercase tracking-[0.25em] text-stone-200/80">
+              Gallery
+            </p>
+            <h2 className="mt-4 text-3xl font-bold">App screenshots</h2>
+          </div>
+
+          <div className="grid grid-cols-2 gap-6 sm:grid-cols-4">
+            <PhoneScreenshot
+              src="/projects/yoke/feed.png"
+              alt="Yoke feed screen"
+              title="Feed"
+            />
+            <PhoneScreenshot
+              src="/projects/yoke/bible.png"
+              alt="Yoke devotional screen"
+              title="Devotional"
+            />
+            <PhoneScreenshot
+              src="/projects/yoke/streak.png"
+              alt="Yoke streak tracking screen"
+              title="Streaks"
+            />
+            <PhoneScreenshot
+              src="/projects/yoke/groups.png"
+              alt="Yoke groups screen"
+              title="Groups"
+            />
+          </div>
+        </section>
       </div>
     </main>
+  );
+}
+
+function PhoneScreenshot({
+  src,
+  alt,
+  title,
+}: {
+  src: string;
+  alt: string;
+  title: string;
+}) {
+  return (
+    <div className="flex flex-col items-center">
+      <div className="relative aspect-[1290/2796] w-full overflow-hidden rounded-[1.75rem] border border-white/10 bg-black shadow-[0_20px_50px_rgba(0,0,0,0.35)]">
+        <Image src={src} alt={alt} fill className="object-cover" />
+      </div>
+      <p className="mt-4 text-sm font-medium text-white/80">{title}</p>
+    </div>
   );
 }

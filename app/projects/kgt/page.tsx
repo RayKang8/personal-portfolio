@@ -83,12 +83,12 @@ export default function KgtProjectPage() {
           </div>
 
           <div className="rounded-[2rem] border border-amber-100/20 bg-gradient-to-br from-stone-200/10 to-amber-100/5 p-4 backdrop-blur-xl">
-            <div className="relative aspect-[16/10] overflow-hidden rounded-[1.5rem] border border-white/10 bg-black">
+            <div className="relative aspect-[16/9] overflow-hidden rounded-[1.5rem] border border-white/10 bg-black">
               <Image
                 src="/projects/kgt/main.png"
                 alt="KGT Eyewear storefront screenshot"
                 fill
-                className="object-contain p-2"
+                className="object-cover"
                 priority
               />
             </div>
@@ -192,7 +192,53 @@ export default function KgtProjectPage() {
             ))}
           </div>
         </section>
+
+        <section className="mt-16">
+          <div className="mb-8">
+            <p className="text-sm uppercase tracking-[0.25em] text-stone-200/80">
+              Gallery
+            </p>
+            <h2 className="mt-4 text-3xl font-bold">Storefront screenshots</h2>
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-3">
+            <ScreenshotCard
+              src="/projects/kgt/featured.png"
+              alt="KGT Eyewear featured products"
+              title="Featured Products"
+            />
+            <ScreenshotCard
+              src="/projects/kgt/product.png"
+              alt="KGT Eyewear product page"
+              title="Product Page"
+            />
+            <ScreenshotCard
+              src="/projects/kgt/account.png"
+              alt="KGT Eyewear account page"
+              title="Account"
+            />
+          </div>
+        </section>
       </div>
     </main>
+  );
+}
+
+function ScreenshotCard({
+  src,
+  alt,
+  title,
+}: {
+  src: string;
+  alt: string;
+  title: string;
+}) {
+  return (
+    <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-4 backdrop-blur-xl">
+      <div className="relative aspect-[16/10] overflow-hidden rounded-[1.25rem] border border-white/10 bg-black">
+        <Image src={src} alt={alt} fill className="object-cover" />
+      </div>
+      <p className="mt-4 text-sm font-medium text-white/80">{title}</p>
+    </div>
   );
 }
