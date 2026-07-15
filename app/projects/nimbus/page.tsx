@@ -77,7 +77,7 @@ export default function NimbusProjectPage() {
                 href="https://nimbus.collin.town"
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-2xl bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5"
+                className="hidden rounded-2xl bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5"
               >
                 Live Demo
               </a>
@@ -86,7 +86,7 @@ export default function NimbusProjectPage() {
                 href="https://github.com/UWO-ECE-Software-Engineering/NIMBUS-Labs"
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-2xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+                className="hidden rounded-2xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
               >
                 GitHub
               </a>

@@ -75,7 +75,7 @@ export default function MarketMindProjectPage() {
                 href="https://marketmind-ashy.vercel.app"
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-2xl bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5"
+                className="hidden rounded-2xl bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5"
               >
                 Live Demo
               </a>

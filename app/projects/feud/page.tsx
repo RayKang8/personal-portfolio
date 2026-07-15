@@ -73,7 +73,7 @@ export default function FeudProjectPage() {
                 href="https://family-feud-labs.vercel.app"
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-2xl bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5"
+                className="hidden rounded-2xl bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5"
               >
                 Live Demo
               </a>
