@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const techStack = [
@@ -81,16 +82,15 @@ export default function KgtProjectPage() {
             </div>
           </div>
 
-          <div className="flex items-center justify-center rounded-[2rem] border border-amber-100/20 bg-gradient-to-br from-stone-200/10 to-amber-100/5 p-4 backdrop-blur-xl">
-            <div className="relative flex aspect-[16/10] w-full flex-col items-center justify-center overflow-hidden rounded-[1.5rem] border border-white/10 bg-black/30 p-8 text-center">
-              <p className="text-xs uppercase tracking-[0.3em] text-amber-100/60">
-                B2B → Hybrid B2B/B2C
-              </p>
-              <h2 className="mt-4 text-3xl font-bold">KGT Eyewear</h2>
-              <p className="mt-3 max-w-sm text-sm leading-6 text-white/60">
-                Shopify storefront redesign and full digital operations for a
-                Canadian eyewear importer.
-              </p>
+          <div className="rounded-[2rem] border border-amber-100/20 bg-gradient-to-br from-stone-200/10 to-amber-100/5 p-4 backdrop-blur-xl">
+            <div className="relative aspect-[16/10] overflow-hidden rounded-[1.5rem] border border-white/10 bg-black">
+              <Image
+                src="/projects/kgt/main.png"
+                alt="KGT Eyewear storefront screenshot"
+                fill
+                className="object-contain p-2"
+                priority
+              />
             </div>
           </div>
         </section>
