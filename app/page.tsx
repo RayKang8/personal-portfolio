@@ -4,6 +4,27 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
+const mainProjects = [
+  {
+    title: "Yoke: Faith Together",
+    slug: "yoke",
+    role: "Founder & Solo Developer",
+    description:
+      "Christian devotional accountability app, live on the iOS App Store with 100+ daily active users. Built solo end-to-end, from the PostgreSQL schema to App Store compliance.",
+    stack: ["React Native", "Expo", "TypeScript", "Supabase", "RevenueCat"],
+    accent: "from-amber-200/15 to-stone-200/10",
+  },
+  {
+    title: "KGT Eyewear",
+    slug: "kgt",
+    role: "Digital Operations & E-Commerce Manager",
+    description:
+      "Expanded a B2B-only Shopify storefront into a hybrid B2B/B2C commerce platform as sole developer, unlocking a new retail revenue channel.",
+    stack: ["Shopify", "Liquid", "Shopify Flow", "E-Commerce"],
+    accent: "from-stone-200/15 to-amber-200/10",
+  },
+];
+
 const featuredProjects = [
   {
     title: "MarketMind",
@@ -347,13 +368,82 @@ export default function HomePage() {
           <div className="mb-8 flex items-end justify-between gap-4">
             <div>
               <p className="text-sm uppercase tracking-[0.25em] text-amber-100/70">
-                Featured Projects
+                Main Projects
               </p>
               <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Selected work</h2>
             </div>
 
             <a href="#contact" className="text-sm text-white/60 transition hover:text-white">
             </a>
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-2">
+          {mainProjects.map((project, index) => (
+            <Link
+              key={project.title}
+              href={`/projects/${project.slug}`}
+              className="block h-full"
+            >
+              <motion.article
+                initial={{ opacity: 0, y: 28 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{
+                  duration: 0.55,
+                  delay: index * 0.12,
+                  ease: "easeOut",
+                }}
+                whileHover={{ y: -8, scale: 1.01 }}
+                className="group relative flex h-full min-h-[380px] cursor-pointer flex-col overflow-hidden rounded-[2rem] border border-amber-100/20 bg-white/5 p-8 transition duration-150 hover:border-amber-100/40 hover:shadow-[0_30px_90px_rgba(0,0,0,0.32)]"
+              >
+                <div
+                  className={`absolute inset-0 bg-gradient-to-br ${project.accent} opacity-60`}
+                />
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.12),transparent_32%)]" />
+                <div className="absolute -right-10 top-0 h-36 w-36 rounded-full bg-white/10 blur-3xl transition duration-500 group-hover:scale-125" />
+
+                <div className="relative z-10 flex h-full flex-col">
+                  <div className="mb-10 flex items-center justify-between text-xs uppercase tracking-[0.24em] text-white/55">
+                    <span>Case Study</span>
+                    <span className="rounded-full border border-amber-100/30 bg-amber-100/10 px-3 py-1 text-amber-100">
+                      Main Project
+                    </span>
+                  </div>
+
+                  <h3 className="text-3xl font-bold">{project.title}</h3>
+                  <p className="mt-2 text-sm font-medium uppercase tracking-[0.18em] text-amber-100/60">
+                    {project.role}
+                  </p>
+
+                  <p className="mt-5 text-sm leading-7 text-amber-100/70">
+                    {project.description}
+                  </p>
+
+                  <div className="mt-auto pt-6">
+                    <div className="flex flex-wrap gap-2">
+                      {project.stack.map((item) => (
+                        <span
+                          key={item}
+                          className="rounded-full border border-white/10 bg-black/20 px-3 py-1.5 text-xs text-white/80"
+                        >
+                          {item}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </motion.article>
+            </Link>
+          ))}
+        </div>
+
+          <div className="mb-8 mt-16 flex items-end justify-between gap-4">
+            <div>
+              <p className="text-sm uppercase tracking-[0.25em] text-amber-100/70">
+                More Projects
+              </p>
+              <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Other work</h2>
+            </div>
           </div>
 
           <div className="grid gap-6 lg:grid-cols-3">
