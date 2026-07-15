@@ -43,7 +43,7 @@ const featuredProjects = [
     accent: "from-stone-200/10 to-amber-200/10",
   },
   {
-    title: "Family Feud Web App",
+    title: "Family Feud",
     slug: "feud",
     description:
       "Interactive event game platform with custom boards and real-time gameplay experience.",
@@ -210,7 +210,7 @@ export default function HomePage() {
                 transition={{ duration: 6.5, repeat: Infinity, ease: "easeInOut" }}
                 className="relative"
               >
-                <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-amber-100/10 via-stone-200/5 to-olive-200/10 blur-3xl" />
+                <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-amber-100/10 via-stone-200/5 to-lime-200/10 blur-3xl" />
                 <div className="absolute -inset-6 rounded-[2.5rem] bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.12),transparent_45%)] opacity-70 blur-2xl" />
 
                 <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-5 shadow-[0_30px_100px_rgba(0,0,0,0.35)] backdrop-blur-2xl">
@@ -368,8 +368,6 @@ export default function HomePage() {
               <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Selected work</h2>
             </div>
 
-            <a href="#contact" className="text-sm text-white/60 transition hover:text-white">
-            </a>
           </div>
 
           <div className="grid gap-6 lg:grid-cols-2">
@@ -569,7 +567,7 @@ export default function HomePage() {
               <p className="text-sm uppercase tracking-[0.25em] text-amber-100/70">
                 Contact
               </p>
-              <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Lets Connect!</h2>
+              <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Let&apos;s Connect!</h2>
             </div>
 
             <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-[0_10px_40px_rgba(0,0,0,0.2)] backdrop-blur-xl">

@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Ray Kang | Software Engineer",
   description:
     "Portfolio of Ray Kang, a software engineer building full-stack applications, AI tools, and modern web products.",

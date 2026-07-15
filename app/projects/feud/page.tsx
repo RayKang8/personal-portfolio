@@ -59,7 +59,7 @@ export default function FeudProjectPage() {
             </p>
 
             <h1 className="mt-4 text-5xl font-black leading-tight sm:text-6xl">
-              Family Feud Labs
+              Family Feud
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/70">
