@@ -63,11 +63,10 @@ export default function MarketMindProjectPage() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/70">
-              An AI-powered investment intelligence platform designed to help
-              users analyze stocks, track portfolios, and generate insights
-              through natural language interaction. MarketMind combines
-              financial data with modern backend architecture and AI services
-              to create a powerful research tool for investors.
+              MarketMind is an AI-powered platform for analyzing stocks and
+              tracking portfolios through natural language. Instead of digging
+              through charts and filings, users can just ask questions and get
+              insights pulled from real financial data.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">

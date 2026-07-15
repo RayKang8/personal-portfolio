@@ -177,10 +177,10 @@ export default function NimbusProjectPage() {
           <h2 className="mt-4 text-3xl font-bold">Where software engineering meets XR and AI</h2>
 
           <p className="mt-5 max-w-4xl leading-8 text-white/70">
-            Nimbus Labs stands out because it is not just a standard CRUD web app.
-            It works across real-time 3D rendering, conversational AI, and immersive XR.
-            That makes it a much more technically layered project, requiring strong frontend
-            implementation, thoughtful system design, and the ability to connect advanced technologies into one product.
+            Nimbus isn't a typical CRUD app. It touches real-time 3D rendering,
+            conversational AI, and immersive XR, which made it a much heavier
+            technical lift than a normal web project, both in the frontend work
+            and in tying all those pieces together into one product.
           </p>
         </section>
 

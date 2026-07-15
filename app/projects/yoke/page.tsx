@@ -62,15 +62,15 @@ export default function YokeProjectPage() {
             </h1>
 
             <p className="mt-3 text-sm font-medium uppercase tracking-[0.18em] text-amber-100/60">
-              Founder & Solo Developer — Toronto, ON — Jan 2025 – Present
+              Founder & Solo Developer, Toronto, ON, Jan 2025 to Present
             </p>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/70">
               Yoke is a Christian devotional accountability app I founded and built
-              solo, from product idea to production. It helps users stay consistent
-              with daily devotionals through accountability and streak tracking, and
-              is currently live on the iOS App Store with 100+ daily active users,
-              with an Android launch in progress.
+              solo, from the first idea to a live App Store release. It helps people
+              stay consistent with daily devotionals by tracking streaks with a group
+              of friends. It's currently on iOS with 100+ daily active users, and I'm
+              working on the Android release now.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
@@ -92,8 +92,8 @@ export default function YokeProjectPage() {
               </p>
               <h2 className="mt-4 text-3xl font-bold">Yoke</h2>
               <p className="mt-3 max-w-sm text-sm leading-6 text-white/60">
-                Faith Together — daily devotional accountability, built solo with
-                React Native, Expo, and Supabase.
+                Daily devotional accountability, built solo with React Native,
+                Expo, and Supabase.
               </p>
             </div>
           </div>
@@ -122,16 +122,18 @@ export default function YokeProjectPage() {
 
             <p className="mt-5 leading-8 text-white/70">
               I wanted a simple way to stay consistent with daily devotionals and
-              build accountability with others, so I built Yoke as a solo founder,
-              owning everything from product design to backend architecture to App
-              Store compliance.
+              keep each other accountable, and I couldn't find an app that did it
+              well, so I built one. As a solo founder, that meant owning everything:
+              the product, the design, the backend, and eventually the App Store
+              submission process.
             </p>
 
             <p className="mt-5 leading-8 text-white/70">
-              The hardest engineering problem was streak logic that stays correct
-              across timezones. I designed the PostgreSQL schema with row-level
-              security and wrote PL/pgSQL functions to handle daily rollovers and
-              streak resets reliably regardless of where a user is in the world.
+              The trickiest part was streak logic. A streak has to reset at the
+              right local time no matter where a user is in the world, so I built
+              the PostgreSQL schema with row-level security and wrote PL/pgSQL
+              functions to handle the daily rollovers and timezone edge cases
+              correctly.
             </p>
           </div>
 
@@ -169,14 +171,13 @@ export default function YokeProjectPage() {
             Why It Stands Out
           </p>
 
-          <h2 className="mt-4 text-3xl font-bold">Solo, shipped, and live</h2>
+          <h2 className="mt-4 text-3xl font-bold">Shipped and live, not sitting in a repo</h2>
 
           <p className="mt-5 max-w-4xl leading-8 text-white/70">
-            Yoke isn&apos;t a side project sitting in a repo — it&apos;s a real product
-            live on the App Store with a growing daily active user base. I own the
-            full lifecycle: product, mobile engineering, database and backend
-            design, subscriptions, and the ongoing App Store and Google Play
-            release process.
+            Yoke is a real product with real users, not a portfolio project I never
+            finished. I've taken it through the entire lifecycle myself: product,
+            mobile engineering, database design, subscriptions, and the ongoing
+            App Store and Google Play release process.
           </p>
         </section>
 

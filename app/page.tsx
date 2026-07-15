@@ -10,7 +10,7 @@ const mainProjects = [
     slug: "yoke",
     role: "Founder & Solo Developer",
     description:
-      "Christian devotional accountability app, live on the iOS App Store with 100+ daily active users. Built solo end-to-end, from the PostgreSQL schema to App Store compliance.",
+      "A Christian devotional accountability app I built solo, from the PostgreSQL schema to App Store compliance. Live on iOS with 100+ daily active users.",
     stack: ["React Native", "Expo", "TypeScript", "Supabase", "RevenueCat"],
     accent: "from-amber-200/15 to-stone-200/10",
   },
@@ -19,7 +19,7 @@ const mainProjects = [
     slug: "kgt",
     role: "Digital Operations & E-Commerce Manager",
     description:
-      "Expanded a B2B-only Shopify storefront into a hybrid B2B/B2C commerce platform as sole developer, unlocking a new retail revenue channel.",
+      "As sole developer, I turned a B2B-only Shopify storefront into a hybrid B2B/B2C platform, opening up a new retail revenue stream.",
     stack: ["Shopify", "Liquid", "Shopify Flow", "E-Commerce"],
     accent: "from-stone-200/15 to-amber-200/10",
   },
@@ -309,7 +309,7 @@ export default function HomePage() {
                     About Me
                   </p>
                   <h2 className="mt-2 text-2xl font-bold sm:text-3xl">
-                  Software Engineer — AI & Full-Stack Systems
+                  Software Engineer, AI & Full-Stack Systems
                   </h2>
                 </div>
               </div>
@@ -323,12 +323,14 @@ export default function HomePage() {
               Engineering scalable software and modern web applications.
               </h2>
               <p className="mt-6 leading-8">
-              I build software that is reliable, scalable, and designed for real users. 
-              My work focuses on full-stack web applications, backend systems, and AI-driven tools built with modern technologies.
+              I like building things people actually use, not just demos. Most of my work is
+              full-stack: web apps, backend systems, and AI tools, usually with Next.js, Node,
+              and Postgres somewhere in the stack.
               </p>
               <p className="mt-5 leading-8">
-              I enjoy building complete systems from frontend interfaces to backend architecture, APIs, and data infrastructure. 
-              My projects emphasize clean architecture, practical problem solving, and production ready engineering.
+              I care about the whole system, not just the UI. That means thinking through the
+              database schema and API design just as much as the frontend, and making sure it
+              holds up once real users are on it.
               </p>
               <div className="mt-10">
               <p className="text-sm uppercase tracking-[0.25em] text-amber-100/70">

@@ -60,15 +60,14 @@ export default function KgtProjectPage() {
             </h1>
 
             <p className="mt-3 text-sm font-medium uppercase tracking-[0.18em] text-amber-100/60">
-              Digital Operations & E-Commerce Manager — Toronto, ON — Sep 2022 – Present
+              Digital Operations & E-Commerce Manager, Toronto, ON, Sep 2022 to Present
             </p>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/70">
-              KGT Eyewear is a Canadian eyewear importer whose Shopify storefront I
-              own as the sole developer. I expanded the platform from a B2B-only
-              wholesale site into a hybrid B2B and B2C commerce experience,
-              redesigning the storefront to unlock a new direct-to-consumer retail
-              revenue channel.
+              KGT Eyewear is a Canadian eyewear importer, and I run their Shopify
+              storefront as the sole developer. The site started out as a B2B-only
+              wholesale platform, and I redesigned it into a hybrid B2B and B2C
+              store so the company could sell directly to retail customers too.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
@@ -172,11 +171,11 @@ export default function KgtProjectPage() {
           </h2>
 
           <p className="mt-5 max-w-4xl leading-8 text-white/70">
-            This project isn&apos;t a portfolio demo — it&apos;s a production storefront
-            for a real importer, where every change I ship has a direct impact on
-            revenue. Expanding the platform into a new retail channel required
-            balancing existing wholesale operations with a completely new customer
-            experience, all as the only developer on the platform.
+            This is a production storefront for a real importer, not a portfolio
+            demo, so every change I ship has a direct impact on revenue. Opening up
+            a new retail channel meant balancing the existing wholesale business
+            with a completely new customer experience, all as the only developer
+            on the platform.
           </p>
         </section>
 
