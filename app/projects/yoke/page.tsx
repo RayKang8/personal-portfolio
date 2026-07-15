@@ -69,8 +69,8 @@ export default function YokeProjectPage() {
               Yoke is a Christian devotional accountability app I founded and built
               solo, from the first idea to a live App Store release. It helps people
               stay consistent with daily devotionals by tracking streaks with a group
-              of friends. It's currently on iOS with 100+ daily active users, and I'm
-              working on the Android release now.
+              of friends. It is live on iOS with 100+ daily active users, and the
+              Android release is currently in progress.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
@@ -122,10 +122,10 @@ export default function YokeProjectPage() {
 
             <p className="mt-5 leading-8 text-white/70">
               I wanted a simple way to stay consistent with daily devotionals and
-              keep each other accountable, and I couldn't find an app that did it
-              well, so I built one. As a solo founder, that meant owning everything:
-              the product, the design, the backend, and eventually the App Store
-              submission process.
+              keep each other accountable, and I had not found an app that did it
+              well. As a solo founder, building Yoke meant owning the entire scope
+              of the product: design, backend architecture, and eventually the
+              App Store submission process.
             </p>
 
             <p className="mt-5 leading-8 text-white/70">
@@ -171,11 +171,11 @@ export default function YokeProjectPage() {
             Why It Stands Out
           </p>
 
-          <h2 className="mt-4 text-3xl font-bold">Shipped and live, not sitting in a repo</h2>
+          <h2 className="mt-4 text-3xl font-bold">A live product with a real user base</h2>
 
           <p className="mt-5 max-w-4xl leading-8 text-white/70">
-            Yoke is a real product with real users, not a portfolio project I never
-            finished. I've taken it through the entire lifecycle myself: product,
+            Yoke is a live, functioning product, not an unfinished portfolio
+            project. I have taken it through the entire lifecycle myself: product,
             mobile engineering, database design, subscriptions, and the ongoing
             App Store and Google Play release process.
           </p>

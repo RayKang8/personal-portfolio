@@ -67,7 +67,7 @@ export default function KgtProjectPage() {
               KGT Eyewear is a Canadian eyewear importer, and I run their Shopify
               storefront as the sole developer. The site started out as a B2B-only
               wholesale platform, and I redesigned it into a hybrid B2B and B2C
-              store so the company could sell directly to retail customers too.
+              store so the company could sell directly to retail customers as well.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
