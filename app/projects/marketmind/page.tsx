@@ -63,10 +63,8 @@ export default function MarketMindProjectPage() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/70">
-              MarketMind is an AI-powered platform for analyzing stocks and
-              tracking portfolios through natural language. Instead of digging
-              through charts and filings, users can just ask questions and get
-              insights pulled from real financial data.
+              AI-powered platform for stock analysis and portfolio tracking.
+              Ask questions in plain language, get insights from real data.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
@@ -125,19 +123,15 @@ export default function MarketMindProjectPage() {
             </h2>
 
             <p className="mt-5 leading-8 text-white/70">
-              MarketMind started as a project to explore how AI can enhance
-              financial research. I wanted to build a platform where users could
-              analyze stocks and market trends using natural language instead of
-              traditional financial dashboards.
+              Started as an exploration of AI in financial research. I wanted
+              stocks and market trends explained through natural language,
+              not dashboards.
             </p>
 
             <p className="mt-5 leading-8 text-white/70">
-              Instead of relying on backend platforms or managed services, I
-              built the backend architecture from scratch using Node.js,
-              Express, PostgreSQL, and Prisma. This allowed me to gain deeper
-              experience designing APIs, authentication systems, database
-              schemas, and integrating AI services into a full-stack
-              application.
+              Built the backend from scratch with Node.js, Express, PostgreSQL,
+              and Prisma instead of managed services, to go deeper on API
+              design, auth, and database schemas.
             </p>
           </div>
 
@@ -162,9 +156,8 @@ export default function MarketMindProjectPage() {
                 Role
               </p>
               <p className="mt-4 leading-8 text-white/70">
-                Designed and implemented the full-stack architecture including
-                frontend dashboards, backend APIs, database design, and AI
-                service integration.
+                Designed and built the full-stack architecture: dashboards,
+                APIs, database design, and AI integration.
               </p>
             </div>
           </div>
@@ -200,36 +193,34 @@ export default function MarketMindProjectPage() {
             <div className="mt-6 space-y-5 text-white/70">
               <div className="rounded-2xl border border-white/10 bg-black/20 p-5">
                 <p className="text-sm leading-7">
-                  Users create an account and authenticate using JWT-based
-                  authentication.
+                  Users create an account with JWT-based authentication.
                 </p>
               </div>
 
               <div className="rounded-2xl border border-white/10 bg-black/20 p-5">
                 <p className="text-sm leading-7">
-                  The frontend communicates with a custom Express API handling
-                  portfolios, watchlists, and stock queries.
+                  The frontend talks to a custom Express API for portfolios,
+                  watchlists, and stock queries.
                 </p>
               </div>
 
               <div className="rounded-2xl border border-white/10 bg-black/20 p-5">
                 <p className="text-sm leading-7">
-                  Financial data and context are sent to an AI service that
-                  generates structured insights.
+                  Financial data is sent to an AI service that generates
+                  structured insights.
                 </p>
               </div>
 
               <div className="rounded-2xl border border-white/10 bg-black/20 p-5">
                 <p className="text-sm leading-7">
-                  Results are returned to the frontend and displayed in a
-                  conversational analysis interface.
+                  Results return to the frontend in a conversational analysis
+                  interface.
                 </p>
               </div>
 
               <div className="rounded-2xl border border-white/10 bg-black/20 p-5">
                 <p className="text-sm leading-7">
-                  Users can save insights, track stocks, and monitor portfolio
-                  performance over time.
+                  Users save insights and track portfolio performance over time.
                 </p>
               </div>
             </div>

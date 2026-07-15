@@ -10,9 +10,9 @@ const techStack = [
 ];
 
 const highlights = [
-  "Expanded the company's Shopify storefront from a B2B-only platform into a hybrid B2B and B2C commerce experience as the sole developer",
-  "Built dual account flows, custom Liquid pricing logic, and automated customer tagging via Shopify Flow",
-  "Owned the full digital operations and product catalog for a Canadian eyewear importer, executing a complete platform redesign to unlock a new retail revenue channel",
+  "Expanded the Shopify storefront from B2B-only to hybrid B2B/B2C as sole developer",
+  "Built dual account flows, custom Liquid pricing logic, and automated Shopify Flow tagging",
+  "Owned digital operations and product catalog; redesigned the platform for a new retail channel",
 ];
 
 const features = [
@@ -64,10 +64,9 @@ export default function KgtProjectPage() {
             </p>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/70">
-              KGT Eyewear is a Canadian eyewear importer, and I run their Shopify
-              storefront as the sole developer. The site started out as a B2B-only
-              wholesale platform, and I redesigned it into a hybrid B2B and B2C
-              store so the company could sell directly to retail customers as well.
+              Canadian eyewear importer. I run their Shopify storefront as sole
+              developer, redesigned from B2B-only wholesale into a hybrid
+              B2B/B2C store.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
@@ -118,18 +117,16 @@ export default function KgtProjectPage() {
             </h2>
 
             <p className="mt-5 leading-8 text-white/70">
-              As the sole developer for KGT Eyewear, I own the storefront, product
-              catalog, and digital operations end to end. The original platform
-              was built purely for wholesale (B2B) customers, so opening it up to
-              retail (B2C) buyers required rethinking account flows, pricing, and
-              checkout logic without disrupting the existing wholesale business.
+              I own the storefront, product catalog, and digital operations end
+              to end. Opening the B2B-only platform to retail buyers meant
+              rethinking account flows, pricing, and checkout, without
+              disrupting the existing wholesale business.
             </p>
 
             <p className="mt-5 leading-8 text-white/70">
-              I built dual account flows so wholesale and retail customers see the
-              correct pricing and experience, wrote custom Liquid logic to drive
-              that pricing, and used Shopify Flow to automatically tag and
-              segment customers as they move through the funnel.
+              Built dual account flows for correct pricing per customer type,
+              custom Liquid pricing logic, and automated customer tagging via
+              Shopify Flow.
             </p>
           </div>
 
@@ -154,8 +151,8 @@ export default function KgtProjectPage() {
                 Role
               </p>
               <p className="mt-4 leading-8 text-white/70">
-                Sole developer owning the Shopify storefront, product catalog, and
-                digital operations, including the B2B-to-B2C platform redesign.
+                Sole developer: Shopify storefront, product catalog, digital
+                operations, and the B2B-to-B2C platform redesign.
               </p>
             </div>
           </div>
@@ -171,11 +168,9 @@ export default function KgtProjectPage() {
           </h2>
 
           <p className="mt-5 max-w-4xl leading-8 text-white/70">
-            This is a production storefront for a real importer, not a portfolio
-            demo, so every change I ship has a direct impact on revenue. Opening up
-            a new retail channel meant balancing the existing wholesale business
-            with a completely new customer experience, all as the only developer
-            on the platform.
+            A production storefront for a real importer, not a demo. Every
+            change I ship affects revenue directly, and I am the only
+            developer on the platform.
           </p>
         </section>
 

@@ -10,7 +10,7 @@ const mainProjects = [
     slug: "yoke",
     role: "Founder & Solo Developer",
     description:
-      "A Christian devotional accountability app I built solo, from the PostgreSQL schema to App Store compliance. Live on iOS with 100+ daily active users.",
+      "Christian devotional accountability app, built solo. Live on iOS with 100+ daily active users.",
     stack: ["React Native", "Expo", "TypeScript", "Supabase", "RevenueCat"],
     accent: "from-amber-200/15 to-stone-200/10",
   },
@@ -19,7 +19,7 @@ const mainProjects = [
     slug: "kgt",
     role: "Digital Operations & E-Commerce Manager",
     description:
-      "As sole developer, I turned a B2B-only Shopify storefront into a hybrid B2B/B2C platform, opening up a new retail revenue stream.",
+      "Turned a B2B-only Shopify storefront into a hybrid B2B/B2C platform as sole developer.",
     stack: ["Shopify", "Liquid", "Shopify Flow", "E-Commerce"],
     accent: "from-stone-200/15 to-amber-200/10",
   },
@@ -156,7 +156,7 @@ export default function HomePage() {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 className="mt-6 max-w-2xl text-base leading-8 text-amber-100/70 sm:text-lg"
               >
-                I’m Ray, a Software Engineer building full-stack applications, AI tools, and modern web products.
+                Software Engineer. Full-stack apps, AI tools, and modern web products.
               </motion.p>
 
               <motion.div
@@ -238,23 +238,18 @@ export default function HomePage() {
                       Full-stack engineering and AI-driven applications
                       </h2>
                       <p className="mt-3 text-sm leading-7 text-white/65">
-                      Building scalable software from modern web frontends to backend
-                      architecture, APIs, and data systems.
+                      Frontend to backend, APIs to data. Full-stack, end to end.
                       </p>
                     </motion.div>
 
                     <div className="grid gap-4 sm:grid-cols-2">
                       <GlassCard
                         title="Frontend"
-                        text="Modern web interfaces built with React, Next.js,
-                        and TypeScript, focused on performance,
-                        usability, and scalable architecture."
+                        text="React, Next.js, and TypeScript. Built for performance and usability."
                       />
                       <GlassCard
                         title="Backend"
-                        text="APIs, databases, authentication, and
-                        cloud-ready systems built with Node.js,
-                        PostgreSQL, and modern backend frameworks."
+                        text="APIs, databases, and auth with Node.js and PostgreSQL."
                       />
                     </div>
 
@@ -320,17 +315,15 @@ export default function HomePage() {
                 Who I Am
               </p>
               <h2 className="mt-4 text-3xl font-bold text-white sm:text-4xl">
-              Engineering scalable software and modern web applications.
+              Full-stack software engineer.
               </h2>
               <p className="mt-6 leading-8">
-              I like building things people actually use, not just demos. Most of my work is
-              full-stack: web apps, backend systems, and AI tools, usually with Next.js, Node,
-              and Postgres somewhere in the stack.
+              I build things people actually use, not demos. Full-stack web apps, backend
+              systems, and AI tools, usually with Next.js, Node, and PostgreSQL.
               </p>
               <p className="mt-5 leading-8">
-              I care about the whole system, not just the UI. That means thinking through the
-              database schema and API design just as much as the frontend, and making sure it
-              holds up once real users are on it.
+              I care about the whole system, not just the UI. Schema, API, and frontend
+              all matter equally to me.
               </p>
               <div className="mt-10">
               <p className="text-sm uppercase tracking-[0.25em] text-amber-100/70">

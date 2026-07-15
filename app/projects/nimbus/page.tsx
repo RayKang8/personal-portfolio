@@ -64,12 +64,9 @@ export default function NimbusProjectPage() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/70">
-              Nimbus Labs is a senior software engineering capstone project developed
-              over an 8-month team cycle. The platform enables real-time interaction
-              with 3D models through AI-assisted querying and immersive XR
-              visualization, combining modern web engineering with graphics and
-              spatial computing workflows. The project placed Top 5 in the university
-              capstone competition.
+              Senior capstone project, 8 months, team of engineers. Real-time
+              3D model interaction with AI querying and immersive XR. Placed
+              Top 5 in the university capstone competition.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
@@ -126,18 +123,14 @@ export default function NimbusProjectPage() {
             <h2 className="mt-4 text-3xl font-bold">What it is</h2>
 
             <p className="mt-5 leading-8 text-white/70">
-              Nimbus Labs was developed as a senior software engineering capstone
-              project focused on building a modern web platform for interacting with
-              3D models. Users can upload models, view them in a live WebGL viewport,
-              decompose them into components, and interact with them through both
-              direct UI workflows and natural-language AI prompts.
+              A web platform for interacting with 3D models. Users upload
+              models, view them in a live WebGL viewport, decompose them into
+              components, and query them with natural-language AI prompts.
             </p>
 
             <p className="mt-5 leading-8 text-white/70">
-              What makes the project especially interesting is how it combines
-              frontend engineering, graphics workflows, AI integration, and XR support
-              into one system. Instead of being just a viewer, Nimbus is built as
-              a richer platform for interacting with 3D content on the web.
+              Combines frontend engineering, graphics workflows, AI, and XR
+              into one system, more than just a model viewer.
             </p>
           </div>
 
@@ -162,8 +155,8 @@ export default function NimbusProjectPage() {
                 Role
               </p>
               <p className="mt-4 leading-8 text-white/70">
-                Full-stack engineering across the web platform, 3D interaction workflows,
-                AI integration, and immersive XR functionality.
+                Full-stack engineering: web platform, 3D interaction, AI
+                integration, and immersive XR.
               </p>
             </div>
           </div>
@@ -177,10 +170,9 @@ export default function NimbusProjectPage() {
           <h2 className="mt-4 text-3xl font-bold">Where software engineering meets XR and AI</h2>
 
           <p className="mt-5 max-w-4xl leading-8 text-white/70">
-            Nimbus isn't a typical CRUD app. It touches real-time 3D rendering,
-            conversational AI, and immersive XR, which made it a much heavier
-            technical lift than a normal web project, both in the frontend work
-            and in tying all those pieces together into one product.
+            Not a typical CRUD app. Real-time 3D rendering, conversational AI,
+            and immersive XR in one product, a much heavier technical lift
+            than a normal web project.
           </p>
         </section>
 
@@ -232,13 +224,13 @@ export default function NimbusProjectPage() {
 
               <div className="rounded-2xl border border-white/10 bg-black/20 p-5">
                 <p className="text-sm leading-7">
-                  A conversational AI interface allows users to query and interact with model data using natural language.
+                  A conversational AI interface lets users query model data in natural language.
                 </p>
               </div>
 
               <div className="rounded-2xl border border-white/10 bg-black/20 p-5">
                 <p className="text-sm leading-7">
-                  Supported experiences can also extend into immersive VR exploration through WebXR.
+                  Supported models extend into immersive VR exploration via WebXR.
                 </p>
               </div>
             </div>

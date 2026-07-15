@@ -12,9 +12,9 @@ const techStack = [
 ];
 
 const highlights = [
-  "Founded and built a Christian devotional accountability app solo, live on the iOS App Store with 100+ daily active users",
-  "Designed the PostgreSQL schema with row-level security and wrote PL/pgSQL functions to handle cross-timezone streak logic",
-  "Shipped 10+ production releases using EAS and managed the full App Store and Google Play submission and compliance pipeline",
+  "Founded and built a devotional accountability app solo, live on iOS with 100+ daily active users",
+  "Designed the PostgreSQL schema with row-level security and PL/pgSQL cross-timezone streak logic",
+  "Shipped 10+ production releases via EAS; managed App Store and Google Play compliance",
 ];
 
 const features = [
@@ -66,11 +66,8 @@ export default function YokeProjectPage() {
             </p>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/70">
-              Yoke is a Christian devotional accountability app I founded and built
-              solo, from the first idea to a live App Store release. It helps people
-              stay consistent with daily devotionals by tracking streaks with a group
-              of friends. It is live on iOS with 100+ daily active users, and the
-              Android release is currently in progress.
+              Christian devotional accountability app, founded and built solo.
+              Live on iOS with 100+ daily active users. Android release in progress.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
@@ -121,19 +118,16 @@ export default function YokeProjectPage() {
             </h2>
 
             <p className="mt-5 leading-8 text-white/70">
-              I wanted a simple way to stay consistent with daily devotionals and
-              keep each other accountable, and I had not found an app that did it
-              well. As a solo founder, building Yoke meant owning the entire scope
-              of the product: design, backend architecture, and eventually the
-              App Store submission process.
+              I wanted a simple way to stay consistent with daily devotionals
+              and keep each other accountable. Could not find an app that did
+              it well, so I built Yoke solo: product, design, backend, and
+              App Store submission.
             </p>
 
             <p className="mt-5 leading-8 text-white/70">
-              The trickiest part was streak logic. A streak has to reset at the
-              right local time no matter where a user is in the world, so I built
-              the PostgreSQL schema with row-level security and wrote PL/pgSQL
-              functions to handle the daily rollovers and timezone edge cases
-              correctly.
+              Hardest problem: streaks need to reset at the right local time,
+              worldwide. Solved it with a PostgreSQL schema using row-level
+              security and PL/pgSQL functions for timezone-safe rollovers.
             </p>
           </div>
 
@@ -158,9 +152,8 @@ export default function YokeProjectPage() {
                 Role
               </p>
               <p className="mt-4 leading-8 text-white/70">
-                Founder and solo developer across product, mobile app, database
-                design, and the full App Store and Google Play submission and
-                compliance pipeline.
+                Founder and solo developer: product, mobile app, database design,
+                and full App Store / Google Play compliance.
               </p>
             </div>
           </div>
@@ -174,10 +167,9 @@ export default function YokeProjectPage() {
           <h2 className="mt-4 text-3xl font-bold">A live product with a real user base</h2>
 
           <p className="mt-5 max-w-4xl leading-8 text-white/70">
-            Yoke is a live, functioning product, not an unfinished portfolio
-            project. I have taken it through the entire lifecycle myself: product,
-            mobile engineering, database design, subscriptions, and the ongoing
-            App Store and Google Play release process.
+            A live, functioning product, not an unfinished side project. I own
+            every stage myself: product, engineering, database design,
+            subscriptions, and ongoing App Store and Google Play releases.
           </p>
         </section>
 
@@ -211,36 +203,31 @@ export default function YokeProjectPage() {
             <div className="mt-6 space-y-5 text-white/70">
               <div className="rounded-2xl border border-white/10 bg-black/20 p-5">
                 <p className="text-sm leading-7">
-                  Users sign up and are provisioned a row-level-secured profile in
-                  Supabase Postgres.
+                  Users sign up with a row-level-secured Supabase Postgres profile.
                 </p>
               </div>
 
               <div className="rounded-2xl border border-white/10 bg-black/20 p-5">
                 <p className="text-sm leading-7">
-                  Daily devotional completions are recorded and evaluated by
-                  PL/pgSQL functions that account for each user&apos;s timezone.
+                  PL/pgSQL functions record and evaluate devotionals per user timezone.
                 </p>
               </div>
 
               <div className="rounded-2xl border border-white/10 bg-black/20 p-5">
                 <p className="text-sm leading-7">
-                  Streaks update in real time, rewarding consistency and
-                  accountability.
+                  Streaks update in real time, rewarding consistency.
                 </p>
               </div>
 
               <div className="rounded-2xl border border-white/10 bg-black/20 p-5">
                 <p className="text-sm leading-7">
-                  RevenueCat manages subscription state and paywalls across
-                  platforms.
+                  RevenueCat manages subscriptions and paywalls across platforms.
                 </p>
               </div>
 
               <div className="rounded-2xl border border-white/10 bg-black/20 p-5">
                 <p className="text-sm leading-7">
-                  New builds ship through EAS, with releases pushed through App
-                  Store and Google Play review.
+                  New builds ship through EAS to App Store and Google Play review.
                 </p>
               </div>
             </div>

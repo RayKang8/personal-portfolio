@@ -63,9 +63,8 @@ export default function FeudProjectPage() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/70">
-              A full-stack Family Feud style game builder and live player designed
-              for events, group activities, and interactive hosting. Built to make
-              creating and running custom game boards fast, simple, and visually polished.
+              Full-stack Family Feud style game builder and live player for
+              events and group activities. Fast, simple, visually polished.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
@@ -122,18 +121,15 @@ export default function FeudProjectPage() {
             <h2 className="mt-4 text-3xl font-bold">What it is</h2>
 
             <p className="mt-5 leading-8 text-white/70">
-              Family Feud Labs is a web-based game builder and player that lets
-              users create custom Family Feud style question boards and run them
-              in a live game format. It was originally built for the KCF (Korean Christian Fellowship)
-              end of year banquet as an interactive group activity, but it can
-              also be used for other clubs, events, teams, or anyone who wants to host
-              their own custom game.
+              A web-based game builder and player for custom Family Feud style
+              boards. Built for the KCF (Korean Christian Fellowship) end of
+              year banquet, usable by any club or event.
             </p>
 
             <p className="mt-5 leading-8 text-white/70">
-              The main goal was to replace manual slides and clunky event prep
-              with a cleaner platform where organizers can quickly build questions,
-              manage games from a dashboard, and run the experience live on screen.
+              Replaces manual slides and clunky event prep. Organizers build
+              questions, manage games from a dashboard, and run them live on
+              screen.
             </p>
           </div>
 
@@ -173,12 +169,9 @@ export default function FeudProjectPage() {
           <h2 className="mt-4 text-3xl font-bold">Built for a real event use case</h2>
 
           <p className="mt-5 max-w-4xl leading-8 text-white/70">
-            I built this project for the KCF end of year banquet where we wanted
-            to host a Family Feud style theme/game for the event. Instead of
-            manually preparing slides or revealing answers one by one, this app
-            allows organizers to build the board quickly, control answer reveals
-            live during the event, and reuse games later. It also gave me the
-            chance to build and deploy a real full-stack application using modern tools.
+            Built for the KCF end of year banquet, replacing manual slides
+            with a tool to build boards fast, control live reveals, and reuse
+            games later. Also a chance to ship a real full-stack app.
           </p>
         </section>
 
