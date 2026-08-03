@@ -125,7 +125,7 @@ export default function NimbusProjectPage() {
             <p className="mt-5 leading-8 text-white/70">
               A web platform for interacting with 3D models. Users upload
               models, view them in a live WebGL viewport, decompose them into
-              components, and query them with natural-language AI prompts.
+              components, and query them AI prompts in natural language.
             </p>
 
             <p className="mt-5 leading-8 text-white/70">
